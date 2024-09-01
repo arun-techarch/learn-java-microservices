@@ -1,0 +1,798 @@
+2022-11-08 22:32:48.027  INFO [customer-service,,,] 31644 --- [main] com.aruntech.CustomerServiceApplication  : No active profile set, falling back to default profiles: default
+2022-11-08 22:32:48.837  INFO [customer-service,,,] 31644 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-08 22:32:49.045  INFO [customer-service,,,] 31644 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 192ms. Found 1 JPA repository interfaces.
+2022-11-08 22:32:49.478  INFO [customer-service,,,] 31644 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3b71cd49-a9e8-3def-8adb-0a0cdf816131
+2022-11-08 22:32:50.616  INFO [customer-service,,,] 31644 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9002 (http)
+2022-11-08 22:32:50.627  INFO [customer-service,,,] 31644 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-08 22:32:50.628  INFO [customer-service,,,] 31644 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-11-08 22:32:51.388  INFO [customer-service,,,] 31644 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-08 22:32:51.388  INFO [customer-service,,,] 31644 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3345 ms
+2022-11-08 22:32:51.475  INFO [customer-service,,,] 31644 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-08 22:32:51.798  INFO [customer-service,,,] 31644 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-08 22:32:51.812  INFO [customer-service,,,] 31644 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:customer'
+2022-11-08 22:32:52.743  WARN [customer-service,,,] 31644 --- [main] o.s.c.s.zipkin2.ZipkinAutoConfiguration  : Check result of the [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@16134476}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": Read timed out; nested exception is java.net.SocketTimeoutException: Read timed out}]
+2022-11-08 22:32:53.550  INFO [customer-service,,,] 31644 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-08 22:32:53.795  INFO [customer-service,,,] 31644 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2022-11-08 22:32:54.241  INFO [customer-service,,,] 31644 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2022-11-08 22:32:54.630  INFO [customer-service,,,] 31644 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-11-08 22:32:56.398  INFO [customer-service,,,] 31644 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-08 22:32:56.408  INFO [customer-service,,,] 31644 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-08 22:32:57.317  WARN [customer-service,,,] 31644 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-11-08 22:32:57.317  INFO [customer-service,,,] 31644 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-11-08 22:32:57.330  WARN [customer-service,,,] 31644 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-11-08 22:32:57.331  INFO [customer-service,,,] 31644 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-11-08 22:32:57.564  WARN [customer-service,,,] 31644 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-08 22:32:58.041  INFO [customer-service,,,] 31644 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-11-08 22:32:59.492  WARN [customer-service,,,] 31644 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2022-11-08 22:33:00.197  INFO [customer-service,,,] 31644 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-11-08 22:33:00.362  INFO [customer-service,,,] 31644 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-11-08 22:33:01.012  INFO [customer-service,,,] 31644 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2022-11-08 22:33:01.013  INFO [customer-service,,,] 31644 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2022-11-08 22:33:01.231  INFO [customer-service,,,] 31644 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2022-11-08 22:33:01.231  INFO [customer-service,,,] 31644 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2022-11-08 22:33:01.544  INFO [customer-service,,,] 31644 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-08 22:33:01.888  INFO [customer-service,,,] 31644 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-11-08 22:33:01.889  INFO [customer-service,,,] 31644 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-11-08 22:33:01.889  INFO [customer-service,,,] 31644 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-11-08 22:33:01.889  INFO [customer-service,,,] 31644 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-11-08 22:33:01.889  INFO [customer-service,,,] 31644 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-11-08 22:33:01.889  INFO [customer-service,,,] 31644 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-11-08 22:33:01.889  INFO [customer-service,,,] 31644 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-11-08 22:33:02.366  INFO [customer-service,,,] 31644 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-11-08 22:33:02.368  INFO [customer-service,,,] 31644 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-11-08 22:33:02.374  INFO [customer-service,,,] 31644 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-11-08 22:33:02.382  INFO [customer-service,,,] 31644 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1667926982379 with initial instances count: 0
+2022-11-08 22:33:02.398  INFO [customer-service,,,] 31644 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CUSTOMER-SERVICE with eureka with status UP
+2022-11-08 22:33:02.401  INFO [customer-service,,,] 31644 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1667926982400, current=UP, previous=STARTING]
+2022-11-08 22:33:02.404  INFO [customer-service,,,] 31644 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOMER-SERVICE/DESKTOP-29U9NHN:customer-service:9002: registering service...
+2022-11-08 22:33:02.512  INFO [customer-service,,,] 31644 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9002 (http) with context path ''
+2022-11-08 22:33:02.513  INFO [customer-service,,,] 31644 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9002
+2022-11-08 22:33:02.776  INFO [customer-service,,,] 31644 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOMER-SERVICE/DESKTOP-29U9NHN:customer-service:9002 - registration status: 204
+2022-11-08 22:33:03.156  INFO [customer-service,,,] 31644 --- [main] com.aruntech.CustomerServiceApplication  : Started CustomerServiceApplication in 17.252 seconds (JVM running for 18.848)
+2022-11-08 22:33:14.247  INFO [loan-service,,,] 30748 --- [main] com.aruntech.LoanServiceApplication      : No active profile set, falling back to default profiles: default
+2022-11-08 22:33:15.113  INFO [loan-service,,,] 30748 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-08 22:33:15.318  INFO [loan-service,,,] 30748 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 193ms. Found 1 JPA repository interfaces.
+2022-11-08 22:33:15.815  INFO [loan-service,,,] 30748 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=2cfb737f-fd29-3de8-8652-ec26372d1d70
+2022-11-08 22:33:16.977  INFO [loan-service,,,] 30748 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9003 (http)
+2022-11-08 22:33:16.992  INFO [loan-service,,,] 30748 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-08 22:33:16.993  INFO [loan-service,,,] 30748 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-11-08 22:33:17.704  INFO [loan-service,,,] 30748 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-08 22:33:17.704  INFO [loan-service,,,] 30748 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3420 ms
+2022-11-08 22:33:17.778  INFO [loan-service,,,] 30748 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-08 22:33:18.083  INFO [loan-service,,,] 30748 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-08 22:33:18.096  INFO [loan-service,,,] 30748 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:loan'
+2022-11-08 22:33:19.115  INFO [loan-service,,,] 30748 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-08 22:33:19.268  INFO [loan-service,,,] 30748 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2022-11-08 22:33:19.535  INFO [loan-service,,,] 30748 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2022-11-08 22:33:19.782  INFO [loan-service,,,] 30748 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-11-08 22:33:20.948  INFO [loan-service,,,] 30748 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-08 22:33:20.955  INFO [loan-service,,,] 30748 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-08 22:33:21.951  WARN [loan-service,,,] 30748 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-11-08 22:33:21.952  INFO [loan-service,,,] 30748 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-11-08 22:33:21.958  WARN [loan-service,,,] 30748 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-11-08 22:33:21.959  INFO [loan-service,,,] 30748 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-11-08 22:33:22.082  WARN [loan-service,,,] 30748 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-08 22:33:22.475  INFO [loan-service,,,] 30748 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-11-08 22:33:25.529  WARN [loan-service,,,] 30748 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2022-11-08 22:33:27.071  INFO [loan-service,,,] 30748 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-11-08 22:33:27.360  INFO [loan-service,,,] 30748 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-11-08 22:33:28.377  INFO [loan-service,,,] 30748 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2022-11-08 22:33:28.378  INFO [loan-service,,,] 30748 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2022-11-08 22:33:28.731  INFO [loan-service,,,] 30748 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2022-11-08 22:33:28.731  INFO [loan-service,,,] 30748 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2022-11-08 22:33:29.148  INFO [loan-service,,,] 30748 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-08 22:33:29.520  INFO [loan-service,,,] 30748 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-11-08 22:33:29.520  INFO [loan-service,,,] 30748 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-11-08 22:33:29.520  INFO [loan-service,,,] 30748 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-11-08 22:33:29.520  INFO [loan-service,,,] 30748 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-11-08 22:33:29.521  INFO [loan-service,,,] 30748 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-11-08 22:33:29.521  INFO [loan-service,,,] 30748 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-11-08 22:33:29.521  INFO [loan-service,,,] 30748 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-11-08 22:33:29.749  INFO [loan-service,,,] 30748 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-11-08 22:33:29.751  INFO [loan-service,,,] 30748 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-11-08 22:33:29.755  INFO [loan-service,,,] 30748 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-11-08 22:33:29.764  INFO [loan-service,,,] 30748 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1667927009760 with initial instances count: 0
+2022-11-08 22:33:29.780  INFO [loan-service,,,] 30748 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application LOAN-SERVICE with eureka with status UP
+2022-11-08 22:33:29.781  INFO [loan-service,,,] 30748 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1667927009781, current=UP, previous=STARTING]
+2022-11-08 22:33:29.788  INFO [loan-service,,,] 30748 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_LOAN-SERVICE/DESKTOP-29U9NHN:loan-service:9003: registering service...
+2022-11-08 22:33:29.902  INFO [loan-service,,,] 30748 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9003 (http) with context path ''
+2022-11-08 22:33:29.902  INFO [loan-service,,,] 30748 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9003
+2022-11-08 22:33:29.949  INFO [loan-service,,,] 30748 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_LOAN-SERVICE/DESKTOP-29U9NHN:loan-service:9003 - registration status: 204
+2022-11-08 22:33:30.406  INFO [loan-service,,,] 30748 --- [main] com.aruntech.LoanServiceApplication      : Started LoanServiceApplication in 18.381 seconds (JVM running for 19.962)
+2022-11-08 22:33:32.381  INFO [customer-service,,,] 31644 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-11-08 22:33:32.381  INFO [customer-service,,,] 31644 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-11-08 22:33:32.381  INFO [customer-service,,,] 31644 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-11-08 22:33:32.381  INFO [customer-service,,,] 31644 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-11-08 22:33:32.382  INFO [customer-service,,,] 31644 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-11-08 22:33:32.382  INFO [customer-service,,,] 31644 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2022-11-08 22:33:32.382  INFO [customer-service,,,] 31644 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-11-08 22:33:32.438  INFO [customer-service,,,] 31644 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-11-08 22:33:42.484  INFO [banking-service,,,] 31588 --- [main] com.aruntech.BankingServiceApplication   : No active profile set, falling back to default profiles: default
+2022-11-08 22:33:43.829  INFO [banking-service,,,] 31588 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=10e5513e-b13f-3eed-bfb0-778181887dad
+2022-11-08 22:33:44.927  INFO [banking-service,,,] 31588 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9001 (http)
+2022-11-08 22:33:44.939  INFO [banking-service,,,] 31588 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-08 22:33:44.939  INFO [banking-service,,,] 31588 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-11-08 22:33:45.652  INFO [banking-service,,,] 31588 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-08 22:33:45.653  INFO [banking-service,,,] 31588 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3148 ms
+2022-11-08 22:33:46.421  WARN [banking-service,,,] 31588 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-11-08 22:33:46.421  INFO [banking-service,,,] 31588 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-11-08 22:33:46.429  WARN [banking-service,,,] 31588 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-11-08 22:33:46.429  INFO [banking-service,,,] 31588 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-11-08 22:33:46.981  INFO [banking-service,,,] 31588 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-11-08 22:33:48.306  WARN [banking-service,,,] 31588 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2022-11-08 22:33:49.029  INFO [banking-service,,,] 31588 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-11-08 22:33:49.161  INFO [banking-service,,,] 31588 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-11-08 22:33:49.657  INFO [banking-service,,,] 31588 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2022-11-08 22:33:49.657  INFO [banking-service,,,] 31588 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2022-11-08 22:33:49.815  INFO [banking-service,,,] 31588 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2022-11-08 22:33:49.816  INFO [banking-service,,,] 31588 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2022-11-08 22:33:50.012  INFO [banking-service,,,] 31588 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-08 22:33:50.195  INFO [banking-service,,,] 31588 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-11-08 22:33:50.196  INFO [banking-service,,,] 31588 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-11-08 22:33:50.196  INFO [banking-service,,,] 31588 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-11-08 22:33:50.196  INFO [banking-service,,,] 31588 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-11-08 22:33:50.196  INFO [banking-service,,,] 31588 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-11-08 22:33:50.196  INFO [banking-service,,,] 31588 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-11-08 22:33:50.196  INFO [banking-service,,,] 31588 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-11-08 22:33:50.455  INFO [banking-service,,,] 31588 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-11-08 22:33:50.457  INFO [banking-service,,,] 31588 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-11-08 22:33:50.459  INFO [banking-service,,,] 31588 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-11-08 22:33:50.462  INFO [banking-service,,,] 31588 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1667927030461 with initial instances count: 2
+2022-11-08 22:33:50.471  INFO [banking-service,,,] 31588 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BANKING-SERVICE with eureka with status UP
+2022-11-08 22:33:50.472  INFO [banking-service,,,] 31588 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1667927030472, current=UP, previous=STARTING]
+2022-11-08 22:33:50.474  INFO [banking-service,,,] 31588 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BANKING-SERVICE/DESKTOP-29U9NHN:banking-service:9001: registering service...
+2022-11-08 22:33:50.530  INFO [banking-service,,,] 31588 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BANKING-SERVICE/DESKTOP-29U9NHN:banking-service:9001 - registration status: 204
+2022-11-08 22:33:50.540  INFO [banking-service,,,] 31588 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9001 (http) with context path ''
+2022-11-08 22:33:50.542  INFO [banking-service,,,] 31588 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9001
+2022-11-08 22:33:50.865  INFO [banking-service,,,] 31588 --- [main] com.aruntech.BankingServiceApplication   : Started BankingServiceApplication in 10.563 seconds (JVM running for 12.26)
+2022-11-08 22:33:59.752  INFO [loan-service,,,] 30748 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-11-08 22:33:59.752  INFO [loan-service,,,] 30748 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-11-08 22:33:59.752  INFO [loan-service,,,] 30748 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-11-08 22:33:59.753  INFO [loan-service,,,] 30748 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-11-08 22:33:59.753  INFO [loan-service,,,] 30748 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-11-08 22:33:59.753  INFO [loan-service,,,] 30748 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2022-11-08 22:33:59.753  INFO [loan-service,,,] 30748 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-11-08 22:33:59.805  INFO [loan-service,,,] 30748 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-11-08 22:35:16.652  INFO [banking-service,,,] 31588 --- [http-nio-9001-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-08 22:35:16.653  INFO [banking-service,,,] 31588 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-08 22:35:16.688  INFO [banking-service,,,] 31588 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 35 ms
+2022-11-08 22:35:16.812  INFO [banking-service,4de12c9df4a75003,4de12c9df4a75003,true] 31588 --- [http-nio-9001-exec-1] com.aruntech.service.BankingService      : banking-service: Creating the new bank account
+2022-11-08 22:35:16.812  INFO [banking-service,4de12c9df4a75003,4de12c9df4a75003,true] 31588 --- [http-nio-9001-exec-1] com.aruntech.service.BankingService      : banking-service: Payload for creating the new customer: CreateCustomerRequest{name='Carbin', balance=2500.0, phone='6542102452', emailId='carbin@gmail.com'}
+2022-11-08 22:35:16.813  INFO [banking-service,4de12c9df4a75003,4de12c9df4a75003,true] 31588 --- [http-nio-9001-exec-1] com.aruntech.service.BankingService      : banking-service: Making call to customer-service to create the customer
+2022-11-08 22:37:02.117  INFO [loan-service,,,] 30748 --- [SpringContextShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application LOAN-SERVICE with eureka with status DOWN
+2022-11-08 22:37:02.118  WARN [loan-service,,,] 30748 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1667927222118, current=DOWN, previous=UP]
+2022-11-08 22:37:02.118  INFO [loan-service,,,] 30748 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_LOAN-SERVICE/DESKTOP-29U9NHN:loan-service:9003: registering service...
+2022-11-08 22:37:02.129  INFO [loan-service,,,] 30748 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-11-08 22:37:02.131  INFO [loan-service,,,] 30748 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_LOAN-SERVICE/DESKTOP-29U9NHN:loan-service:9003 - registration status: 204
+2022-11-08 22:37:02.135  INFO [loan-service,,,] 30748 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-08 22:37:02.137  INFO [loan-service,,,] 30748 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-11-08 22:37:02.360  INFO [loan-service,,,] 30748 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-08 22:37:02.363  INFO [loan-service,,,] 30748 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-08 22:37:02.364  INFO [loan-service,,,] 30748 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-11-08 22:37:05.378  INFO [loan-service,,,] 30748 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-11-08 22:37:05.388  INFO [loan-service,,,] 30748 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_LOAN-SERVICE/DESKTOP-29U9NHN:loan-service:9003 - deregister  status: 200
+2022-11-08 22:37:05.410  INFO [loan-service,,,] 30748 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-11-08 22:37:11.879  INFO [loan-service,,,] 32524 --- [main] com.aruntech.LoanServiceApplication      : No active profile set, falling back to default profiles: default
+2022-11-08 22:37:12.932  INFO [loan-service,,,] 32524 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-08 22:37:13.244  INFO [loan-service,,,] 32524 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 293ms. Found 1 JPA repository interfaces.
+2022-11-08 22:37:13.676  INFO [loan-service,,,] 32524 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=2cfb737f-fd29-3de8-8652-ec26372d1d70
+2022-11-08 22:37:14.858  INFO [loan-service,,,] 32524 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9003 (http)
+2022-11-08 22:37:14.875  INFO [loan-service,,,] 32524 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-08 22:37:14.876  INFO [loan-service,,,] 32524 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-11-08 22:37:15.656  INFO [loan-service,,,] 32524 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-08 22:37:15.657  INFO [loan-service,,,] 32524 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3754 ms
+2022-11-08 22:37:15.719  INFO [loan-service,,,] 32524 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-08 22:37:16.049  INFO [loan-service,,,] 32524 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-08 22:37:16.059  INFO [loan-service,,,] 32524 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:loan'
+2022-11-08 22:37:16.974  INFO [loan-service,,,] 32524 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-08 22:37:17.098  INFO [loan-service,,,] 32524 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2022-11-08 22:37:17.400  INFO [loan-service,,,] 32524 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2022-11-08 22:37:17.625  INFO [loan-service,,,] 32524 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-11-08 22:37:18.652  INFO [loan-service,,,] 32524 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-08 22:37:18.659  INFO [loan-service,,,] 32524 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-08 22:37:19.266  WARN [loan-service,,,] 32524 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-11-08 22:37:19.266  INFO [loan-service,,,] 32524 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-11-08 22:37:19.273  WARN [loan-service,,,] 32524 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-11-08 22:37:19.273  INFO [loan-service,,,] 32524 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-11-08 22:37:19.381  WARN [loan-service,,,] 32524 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-08 22:37:19.642  INFO [loan-service,,,] 32524 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-11-08 22:37:20.863  WARN [loan-service,,,] 32524 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2022-11-08 22:37:21.472  INFO [loan-service,,,] 32524 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-11-08 22:37:21.577  INFO [loan-service,,,] 32524 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-11-08 22:37:22.201  INFO [loan-service,,,] 32524 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2022-11-08 22:37:22.202  INFO [loan-service,,,] 32524 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2022-11-08 22:37:22.461  INFO [loan-service,,,] 32524 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2022-11-08 22:37:22.461  INFO [loan-service,,,] 32524 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2022-11-08 22:37:22.969  INFO [loan-service,,,] 32524 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-08 22:37:23.770  INFO [loan-service,,,] 32524 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-11-08 22:37:23.771  INFO [loan-service,,,] 32524 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-11-08 22:37:23.771  INFO [loan-service,,,] 32524 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-11-08 22:37:23.771  INFO [loan-service,,,] 32524 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-11-08 22:37:23.772  INFO [loan-service,,,] 32524 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-11-08 22:37:23.772  INFO [loan-service,,,] 32524 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-11-08 22:37:23.772  INFO [loan-service,,,] 32524 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-11-08 22:37:24.208  INFO [loan-service,,,] 32524 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-11-08 22:37:24.213  INFO [loan-service,,,] 32524 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-11-08 22:37:24.217  INFO [loan-service,,,] 32524 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-11-08 22:37:24.244  INFO [loan-service,,,] 32524 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1667927244242 with initial instances count: 3
+2022-11-08 22:37:24.309  INFO [loan-service,,,] 32524 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application LOAN-SERVICE with eureka with status UP
+2022-11-08 22:37:24.310  INFO [loan-service,,,] 32524 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1667927244310, current=UP, previous=STARTING]
+2022-11-08 22:37:24.328  INFO [loan-service,,,] 32524 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_LOAN-SERVICE/DESKTOP-29U9NHN:loan-service:9003: registering service...
+2022-11-08 22:37:24.441  INFO [loan-service,,,] 32524 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_LOAN-SERVICE/DESKTOP-29U9NHN:loan-service:9003 - registration status: 204
+2022-11-08 22:37:24.455  INFO [loan-service,,,] 32524 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9003 (http) with context path ''
+2022-11-08 22:37:24.460  INFO [loan-service,,,] 32524 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9003
+2022-11-08 22:37:26.230  INFO [loan-service,,,] 32524 --- [main] com.aruntech.LoanServiceApplication      : Started LoanServiceApplication in 16.553 seconds (JVM running for 18.371)
+2022-11-08 22:37:33.093  INFO [banking-service,,,] 31588 --- [SpringContextShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application BANKING-SERVICE with eureka with status DOWN
+2022-11-08 22:37:33.093  WARN [banking-service,,,] 31588 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1667927253093, current=DOWN, previous=UP]
+2022-11-08 22:37:33.094  INFO [banking-service,,,] 31588 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BANKING-SERVICE/DESKTOP-29U9NHN:banking-service:9001: registering service...
+2022-11-08 22:37:33.097  INFO [banking-service,,,] 31588 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-11-08 22:37:33.107  INFO [banking-service,,,] 31588 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BANKING-SERVICE/DESKTOP-29U9NHN:banking-service:9001 - registration status: 204
+2022-11-08 22:37:33.420  INFO [banking-service,,,] 31588 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-11-08 22:37:36.435  INFO [banking-service,,,] 31588 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-11-08 22:37:36.450  INFO [banking-service,,,] 31588 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BANKING-SERVICE/DESKTOP-29U9NHN:banking-service:9001 - deregister  status: 200
+2022-11-08 22:37:36.476  INFO [banking-service,,,] 31588 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-11-08 22:37:42.761  INFO [banking-service,,,] 2496 --- [main] com.aruntech.BankingServiceApplication   : No active profile set, falling back to default profiles: default
+2022-11-08 22:37:44.415  INFO [banking-service,,,] 2496 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=10e5513e-b13f-3eed-bfb0-778181887dad
+2022-11-08 22:37:46.172  INFO [banking-service,,,] 2496 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9001 (http)
+2022-11-08 22:37:46.194  INFO [banking-service,,,] 2496 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-08 22:37:46.195  INFO [banking-service,,,] 2496 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-11-08 22:37:46.961  INFO [banking-service,,,] 2496 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-08 22:37:46.962  INFO [banking-service,,,] 2496 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4173 ms
+2022-11-08 22:37:47.758  WARN [banking-service,,,] 2496 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-11-08 22:37:47.758  INFO [banking-service,,,] 2496 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-11-08 22:37:47.767  WARN [banking-service,,,] 2496 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-11-08 22:37:47.767  INFO [banking-service,,,] 2496 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-11-08 22:37:48.280  INFO [banking-service,,,] 2496 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-11-08 22:37:49.723  WARN [banking-service,,,] 2496 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2022-11-08 22:37:50.321  INFO [banking-service,,,] 2496 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-11-08 22:37:50.422  INFO [banking-service,,,] 2496 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-11-08 22:37:50.994  INFO [banking-service,,,] 2496 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2022-11-08 22:37:50.994  INFO [banking-service,,,] 2496 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2022-11-08 22:37:51.150  INFO [banking-service,,,] 2496 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2022-11-08 22:37:51.151  INFO [banking-service,,,] 2496 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2022-11-08 22:37:51.323  INFO [banking-service,,,] 2496 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-08 22:37:51.537  INFO [banking-service,,,] 2496 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-11-08 22:37:51.537  INFO [banking-service,,,] 2496 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-11-08 22:37:51.538  INFO [banking-service,,,] 2496 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-11-08 22:37:51.538  INFO [banking-service,,,] 2496 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-11-08 22:37:51.538  INFO [banking-service,,,] 2496 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-11-08 22:37:51.538  INFO [banking-service,,,] 2496 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-11-08 22:37:51.538  INFO [banking-service,,,] 2496 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-11-08 22:37:51.725  INFO [banking-service,,,] 2496 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-11-08 22:37:51.728  INFO [banking-service,,,] 2496 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-11-08 22:37:51.730  INFO [banking-service,,,] 2496 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-11-08 22:37:51.735  INFO [banking-service,,,] 2496 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1667927271733 with initial instances count: 3
+2022-11-08 22:37:51.744  INFO [banking-service,,,] 2496 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BANKING-SERVICE with eureka with status UP
+2022-11-08 22:37:51.745  INFO [banking-service,,,] 2496 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1667927271745, current=UP, previous=STARTING]
+2022-11-08 22:37:51.748  INFO [banking-service,,,] 2496 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BANKING-SERVICE/DESKTOP-29U9NHN:banking-service:9001: registering service...
+2022-11-08 22:37:51.812  INFO [banking-service,,,] 2496 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BANKING-SERVICE/DESKTOP-29U9NHN:banking-service:9001 - registration status: 204
+2022-11-08 22:37:51.822  INFO [banking-service,,,] 2496 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9001 (http) with context path ''
+2022-11-08 22:37:51.823  INFO [banking-service,,,] 2496 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9001
+2022-11-08 22:37:52.162  INFO [banking-service,,,] 2496 --- [main] com.aruntech.BankingServiceApplication   : Started BankingServiceApplication in 11.557 seconds (JVM running for 13.253)
+2022-11-08 22:38:01.908  INFO [customer-service,,,] 31644 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-08 22:38:05.115  INFO [banking-service,,,] 2496 --- [http-nio-9001-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-08 22:38:05.116  INFO [banking-service,,,] 2496 --- [http-nio-9001-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-08 22:38:05.135  INFO [banking-service,,,] 2496 --- [http-nio-9001-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 19 ms
+2022-11-08 22:38:05.192  INFO [banking-service,3d74b88228ad2551,3d74b88228ad2551,true] 2496 --- [http-nio-9001-exec-2] com.aruntech.service.BankingService      : banking-service: Creating the new bank account
+2022-11-08 22:38:05.193  INFO [banking-service,3d74b88228ad2551,3d74b88228ad2551,true] 2496 --- [http-nio-9001-exec-2] com.aruntech.service.BankingService      : banking-service: Payload for creating the new customer: CreateCustomerRequest{name='Carbin', balance=2500.0, phone='6542102452', emailId='carbin@gmail.com'}
+2022-11-08 22:38:05.193  INFO [banking-service,3d74b88228ad2551,3d74b88228ad2551,true] 2496 --- [http-nio-9001-exec-2] com.aruntech.service.BankingService      : banking-service: Making call to customer-service to create the customer
+2022-11-08 22:38:22.611  INFO [banking-service,91cc7c73838dc2b0,91cc7c73838dc2b0,true] 2496 --- [http-nio-9001-exec-6] com.aruntech.service.BankingService      : banking-service: Creating the new bank account
+2022-11-08 22:38:22.611  INFO [banking-service,91cc7c73838dc2b0,91cc7c73838dc2b0,true] 2496 --- [http-nio-9001-exec-6] com.aruntech.service.BankingService      : banking-service: Payload for creating the new customer: CreateCustomerRequest{name='Carbin', balance=2500.0, phone='6542102452', emailId='carbin@gmail.com'}
+2022-11-08 22:38:22.612  INFO [banking-service,91cc7c73838dc2b0,91cc7c73838dc2b0,true] 2496 --- [http-nio-9001-exec-6] com.aruntech.service.BankingService      : banking-service: Making call to customer-service to create the customer
+2022-11-08 22:39:03.446  INFO [loan-service,,,] 32524 --- [SpringContextShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application LOAN-SERVICE with eureka with status DOWN
+2022-11-08 22:39:03.447  WARN [loan-service,,,] 32524 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1667927343447, current=DOWN, previous=UP]
+2022-11-08 22:39:03.447  INFO [loan-service,,,] 32524 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_LOAN-SERVICE/DESKTOP-29U9NHN:loan-service:9003: registering service...
+2022-11-08 22:39:03.453  INFO [loan-service,,,] 32524 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-11-08 22:39:03.456  INFO [loan-service,,,] 32524 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-08 22:39:03.457  INFO [loan-service,,,] 32524 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-11-08 22:39:03.471  INFO [loan-service,,,] 32524 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_LOAN-SERVICE/DESKTOP-29U9NHN:loan-service:9003 - registration status: 204
+2022-11-08 22:39:04.326  INFO [loan-service,,,] 32524 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-08 22:39:04.333  INFO [loan-service,,,] 32524 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-08 22:39:04.334  INFO [loan-service,,,] 32524 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-11-08 22:39:07.340  INFO [loan-service,,,] 32524 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-11-08 22:39:07.359  INFO [loan-service,,,] 32524 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_LOAN-SERVICE/DESKTOP-29U9NHN:loan-service:9003 - deregister  status: 200
+2022-11-08 22:39:07.372  INFO [loan-service,,,] 32524 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-11-08 22:39:08.406  INFO [banking-service,,,] 2496 --- [SpringContextShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application BANKING-SERVICE with eureka with status DOWN
+2022-11-08 22:39:08.406  WARN [banking-service,,,] 2496 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1667927348406, current=DOWN, previous=UP]
+2022-11-08 22:39:08.407  INFO [banking-service,,,] 2496 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BANKING-SERVICE/DESKTOP-29U9NHN:banking-service:9001: registering service...
+2022-11-08 22:39:08.415  INFO [banking-service,,,] 2496 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-11-08 22:39:08.421  INFO [banking-service,,,] 2496 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BANKING-SERVICE/DESKTOP-29U9NHN:banking-service:9001 - registration status: 204
+2022-11-08 22:39:08.935  INFO [banking-service,,,] 2496 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-11-08 22:39:11.941  INFO [banking-service,,,] 2496 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-11-08 22:39:11.957  INFO [banking-service,,,] 2496 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BANKING-SERVICE/DESKTOP-29U9NHN:banking-service:9001 - deregister  status: 200
+2022-11-08 22:39:11.970  INFO [banking-service,,,] 2496 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-11-08 22:40:24.454  INFO [loan-service,,,] 19868 --- [main] com.aruntech.LoanServiceApplication      : No active profile set, falling back to default profiles: default
+2022-11-08 22:40:25.980  INFO [loan-service,,,] 19868 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-08 22:40:26.417  INFO [loan-service,,,] 19868 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 415ms. Found 1 JPA repository interfaces.
+2022-11-08 22:40:27.176  INFO [loan-service,,,] 19868 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=2cfb737f-fd29-3de8-8652-ec26372d1d70
+2022-11-08 22:40:28.880  INFO [loan-service,,,] 19868 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9003 (http)
+2022-11-08 22:40:28.896  INFO [loan-service,,,] 19868 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-08 22:40:28.896  INFO [loan-service,,,] 19868 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-11-08 22:40:29.688  INFO [loan-service,,,] 19868 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-08 22:40:29.689  INFO [loan-service,,,] 19868 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5182 ms
+2022-11-08 22:40:29.800  INFO [loan-service,,,] 19868 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-08 22:40:30.137  INFO [loan-service,,,] 19868 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-08 22:40:30.147  INFO [loan-service,,,] 19868 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:loan'
+2022-11-08 22:40:31.035  INFO [loan-service,,,] 19868 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-08 22:40:31.179  INFO [loan-service,,,] 19868 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2022-11-08 22:40:31.467  INFO [loan-service,,,] 19868 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2022-11-08 22:40:31.697  INFO [loan-service,,,] 19868 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-11-08 22:40:32.787  INFO [loan-service,,,] 19868 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-08 22:40:32.796  INFO [loan-service,,,] 19868 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-08 22:40:33.537  WARN [loan-service,,,] 19868 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-11-08 22:40:33.537  INFO [loan-service,,,] 19868 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-11-08 22:40:33.544  WARN [loan-service,,,] 19868 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-11-08 22:40:33.544  INFO [loan-service,,,] 19868 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-11-08 22:40:33.684  WARN [loan-service,,,] 19868 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-08 22:40:33.957  INFO [loan-service,,,] 19868 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-11-08 22:40:35.412  WARN [loan-service,,,] 19868 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2022-11-08 22:40:36.073  INFO [loan-service,,,] 19868 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-11-08 22:40:36.179  INFO [loan-service,,,] 19868 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-11-08 22:40:36.770  INFO [loan-service,,,] 19868 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2022-11-08 22:40:36.771  INFO [loan-service,,,] 19868 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2022-11-08 22:40:36.929  INFO [loan-service,,,] 19868 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2022-11-08 22:40:36.929  INFO [loan-service,,,] 19868 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2022-11-08 22:40:37.134  INFO [loan-service,,,] 19868 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-08 22:40:37.363  INFO [loan-service,,,] 19868 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-11-08 22:40:37.363  INFO [loan-service,,,] 19868 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-11-08 22:40:37.363  INFO [loan-service,,,] 19868 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-11-08 22:40:37.363  INFO [loan-service,,,] 19868 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-11-08 22:40:37.363  INFO [loan-service,,,] 19868 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-11-08 22:40:37.364  INFO [loan-service,,,] 19868 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-11-08 22:40:37.364  INFO [loan-service,,,] 19868 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-11-08 22:40:37.704  INFO [loan-service,,,] 19868 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-11-08 22:40:37.708  INFO [loan-service,,,] 19868 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-11-08 22:40:37.711  INFO [loan-service,,,] 19868 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-11-08 22:40:37.716  INFO [loan-service,,,] 19868 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1667927437714 with initial instances count: 1
+2022-11-08 22:40:37.730  INFO [loan-service,,,] 19868 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application LOAN-SERVICE with eureka with status UP
+2022-11-08 22:40:37.732  INFO [loan-service,,,] 19868 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1667927437732, current=UP, previous=STARTING]
+2022-11-08 22:40:37.736  INFO [loan-service,,,] 19868 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_LOAN-SERVICE/DESKTOP-29U9NHN:loan-service:9003: registering service...
+2022-11-08 22:40:37.815  INFO [loan-service,,,] 19868 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_LOAN-SERVICE/DESKTOP-29U9NHN:loan-service:9003 - registration status: 204
+2022-11-08 22:40:37.828  INFO [loan-service,,,] 19868 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9003 (http) with context path ''
+2022-11-08 22:40:37.830  INFO [loan-service,,,] 19868 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9003
+2022-11-08 22:40:38.400  INFO [loan-service,,,] 19868 --- [main] com.aruntech.LoanServiceApplication      : Started LoanServiceApplication in 16.585 seconds (JVM running for 18.101)
+2022-11-08 22:41:00.251  INFO [banking-service,,,] 15988 --- [main] com.aruntech.BankingServiceApplication   : No active profile set, falling back to default profiles: default
+2022-11-08 22:41:01.398  INFO [banking-service,,,] 15988 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=10e5513e-b13f-3eed-bfb0-778181887dad
+2022-11-08 22:41:03.324  INFO [banking-service,,,] 15988 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9001 (http)
+2022-11-08 22:41:03.336  INFO [banking-service,,,] 15988 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-08 22:41:03.336  INFO [banking-service,,,] 15988 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-11-08 22:41:04.168  INFO [banking-service,,,] 15988 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-08 22:41:04.168  INFO [banking-service,,,] 15988 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3899 ms
+2022-11-08 22:41:05.005  WARN [banking-service,,,] 15988 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-11-08 22:41:05.005  INFO [banking-service,,,] 15988 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-11-08 22:41:05.014  WARN [banking-service,,,] 15988 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-11-08 22:41:05.014  INFO [banking-service,,,] 15988 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-11-08 22:41:05.597  INFO [banking-service,,,] 15988 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-11-08 22:41:06.952  WARN [banking-service,,,] 15988 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2022-11-08 22:41:07.698  INFO [banking-service,,,] 15988 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-11-08 22:41:07.852  INFO [banking-service,,,] 15988 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-11-08 22:41:08.633  INFO [banking-service,,,] 15988 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2022-11-08 22:41:08.633  INFO [banking-service,,,] 15988 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2022-11-08 22:41:08.870  INFO [banking-service,,,] 15988 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2022-11-08 22:41:08.870  INFO [banking-service,,,] 15988 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2022-11-08 22:41:09.154  INFO [banking-service,,,] 15988 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-08 22:41:09.562  INFO [banking-service,,,] 15988 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-11-08 22:41:09.563  INFO [banking-service,,,] 15988 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-11-08 22:41:09.563  INFO [banking-service,,,] 15988 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-11-08 22:41:09.563  INFO [banking-service,,,] 15988 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-11-08 22:41:09.563  INFO [banking-service,,,] 15988 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-11-08 22:41:09.563  INFO [banking-service,,,] 15988 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-11-08 22:41:09.564  INFO [banking-service,,,] 15988 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-11-08 22:41:09.994  INFO [banking-service,,,] 15988 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-11-08 22:41:09.999  INFO [banking-service,,,] 15988 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-11-08 22:41:10.003  INFO [banking-service,,,] 15988 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-11-08 22:41:10.010  INFO [banking-service,,,] 15988 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1667927470007 with initial instances count: 2
+2022-11-08 22:41:10.026  INFO [banking-service,,,] 15988 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BANKING-SERVICE with eureka with status UP
+2022-11-08 22:41:10.028  INFO [banking-service,,,] 15988 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1667927470028, current=UP, previous=STARTING]
+2022-11-08 22:41:10.035  INFO [banking-service,,,] 15988 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BANKING-SERVICE/DESKTOP-29U9NHN:banking-service:9001: registering service...
+2022-11-08 22:41:10.143  INFO [banking-service,,,] 15988 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BANKING-SERVICE/DESKTOP-29U9NHN:banking-service:9001 - registration status: 204
+2022-11-08 22:41:10.178  INFO [banking-service,,,] 15988 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9001 (http) with context path ''
+2022-11-08 22:41:10.180  INFO [banking-service,,,] 15988 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9001
+2022-11-08 22:41:10.825  INFO [banking-service,,,] 15988 --- [main] com.aruntech.BankingServiceApplication   : Started BankingServiceApplication in 12.759 seconds (JVM running for 14.089)
+2022-11-08 22:41:17.157  INFO [banking-service,,,] 15988 --- [http-nio-9001-exec-7] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-08 22:41:17.158  INFO [banking-service,,,] 15988 --- [http-nio-9001-exec-7] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-08 22:41:17.186  INFO [banking-service,,,] 15988 --- [http-nio-9001-exec-7] o.s.web.servlet.DispatcherServlet        : Completed initialization in 27 ms
+2022-11-08 22:41:17.339  INFO [banking-service,92b1086185a33d99,92b1086185a33d99,true] 15988 --- [http-nio-9001-exec-7] com.aruntech.service.BankingService      : banking-service: Creating the new bank account
+2022-11-08 22:41:17.340  INFO [banking-service,92b1086185a33d99,92b1086185a33d99,true] 15988 --- [http-nio-9001-exec-7] com.aruntech.service.BankingService      : banking-service: Payload for creating the new customer: CreateCustomerRequest{name='Carbin', balance=2500.0, phone='6542102452', emailId='carbin@gmail.com'}
+2022-11-08 22:41:17.341  INFO [banking-service,92b1086185a33d99,92b1086185a33d99,true] 15988 --- [http-nio-9001-exec-7] com.aruntech.service.BankingService      : banking-service: Making call to customer-service to create the customer
+2022-11-08 22:41:27.087  INFO [banking-service,,,] 15988 --- [SpringContextShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application BANKING-SERVICE with eureka with status DOWN
+2022-11-08 22:41:27.088  WARN [banking-service,,,] 15988 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1667927487088, current=DOWN, previous=UP]
+2022-11-08 22:41:27.088  INFO [banking-service,,,] 15988 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BANKING-SERVICE/DESKTOP-29U9NHN:banking-service:9001: registering service...
+2022-11-08 22:41:27.094  INFO [banking-service,,,] 15988 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-11-08 22:41:27.104  INFO [banking-service,,,] 15988 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BANKING-SERVICE/DESKTOP-29U9NHN:banking-service:9001 - registration status: 204
+2022-11-08 22:41:27.744  INFO [banking-service,,,] 15988 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-11-08 22:41:30.757  INFO [banking-service,,,] 15988 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-11-08 22:41:30.774  INFO [banking-service,,,] 15988 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BANKING-SERVICE/DESKTOP-29U9NHN:banking-service:9001 - deregister  status: 200
+2022-11-08 22:41:30.789  INFO [banking-service,,,] 15988 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-11-08 22:41:50.249  INFO [banking-service,,,] 10016 --- [main] com.aruntech.BankingServiceApplication   : No active profile set, falling back to default profiles: default
+2022-11-08 22:41:51.161  INFO [banking-service,,,] 10016 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=10e5513e-b13f-3eed-bfb0-778181887dad
+2022-11-08 22:41:52.240  INFO [banking-service,,,] 10016 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9001 (http)
+2022-11-08 22:41:52.252  INFO [banking-service,,,] 10016 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-08 22:41:52.252  INFO [banking-service,,,] 10016 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-11-08 22:41:53.059  INFO [banking-service,,,] 10016 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-08 22:41:53.061  INFO [banking-service,,,] 10016 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2791 ms
+2022-11-08 22:41:54.475  WARN [banking-service,,,] 10016 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-11-08 22:41:54.476  INFO [banking-service,,,] 10016 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-11-08 22:41:54.496  WARN [banking-service,,,] 10016 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-11-08 22:41:54.500  INFO [banking-service,,,] 10016 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-11-08 22:41:55.677  INFO [banking-service,,,] 10016 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-11-08 22:41:57.921  WARN [banking-service,,,] 10016 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2022-11-08 22:41:58.845  INFO [banking-service,,,] 10016 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-11-08 22:41:58.988  INFO [banking-service,,,] 10016 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-11-08 22:41:59.766  INFO [banking-service,,,] 10016 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2022-11-08 22:41:59.766  INFO [banking-service,,,] 10016 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2022-11-08 22:41:59.961  INFO [banking-service,,,] 10016 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2022-11-08 22:41:59.961  INFO [banking-service,,,] 10016 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2022-11-08 22:42:00.205  INFO [banking-service,,,] 10016 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-08 22:42:00.502  INFO [banking-service,,,] 10016 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-11-08 22:42:00.502  INFO [banking-service,,,] 10016 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-11-08 22:42:00.502  INFO [banking-service,,,] 10016 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-11-08 22:42:00.502  INFO [banking-service,,,] 10016 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-11-08 22:42:00.503  INFO [banking-service,,,] 10016 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-11-08 22:42:00.503  INFO [banking-service,,,] 10016 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-11-08 22:42:00.503  INFO [banking-service,,,] 10016 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-11-08 22:42:00.807  INFO [banking-service,,,] 10016 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-11-08 22:42:00.811  INFO [banking-service,,,] 10016 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-11-08 22:42:00.815  INFO [banking-service,,,] 10016 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-11-08 22:42:00.822  INFO [banking-service,,,] 10016 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1667927520820 with initial instances count: 2
+2022-11-08 22:42:00.838  INFO [banking-service,,,] 10016 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BANKING-SERVICE with eureka with status UP
+2022-11-08 22:42:00.839  INFO [banking-service,,,] 10016 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1667927520839, current=UP, previous=STARTING]
+2022-11-08 22:42:00.843  INFO [banking-service,,,] 10016 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BANKING-SERVICE/DESKTOP-29U9NHN:banking-service:9001: registering service...
+2022-11-08 22:42:00.909  INFO [banking-service,,,] 10016 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BANKING-SERVICE/DESKTOP-29U9NHN:banking-service:9001 - registration status: 204
+2022-11-08 22:42:00.919  INFO [banking-service,,,] 10016 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9001 (http) with context path ''
+2022-11-08 22:42:00.921  INFO [banking-service,,,] 10016 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9001
+2022-11-08 22:42:01.404  INFO [banking-service,,,] 10016 --- [main] com.aruntech.BankingServiceApplication   : Started BankingServiceApplication in 13.184 seconds (JVM running for 14.534)
+2022-11-08 22:42:17.671  INFO [banking-service,,,] 10016 --- [http-nio-9001-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-08 22:42:17.671  INFO [banking-service,,,] 10016 --- [http-nio-9001-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-08 22:42:17.699  INFO [banking-service,,,] 10016 --- [http-nio-9001-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 28 ms
+2022-11-08 22:42:17.815  INFO [banking-service,cfabd6eb7d8e4ab0,cfabd6eb7d8e4ab0,true] 10016 --- [http-nio-9001-exec-2] com.aruntech.service.BankingService      : banking-service: Creating the new bank account
+2022-11-08 22:42:17.816  INFO [banking-service,cfabd6eb7d8e4ab0,cfabd6eb7d8e4ab0,true] 10016 --- [http-nio-9001-exec-2] com.aruntech.service.BankingService      : banking-service: Payload for creating the new customer: CreateCustomerRequest{name='Carbin', balance=2500.0, phone='6542102452', emailId='carbin@gmail.com'}
+2022-11-08 22:42:17.816  INFO [banking-service,cfabd6eb7d8e4ab0,cfabd6eb7d8e4ab0,true] 10016 --- [http-nio-9001-exec-2] com.aruntech.service.BankingService      : banking-service: Making call to customer-service to create the customer
+2022-11-08 22:43:01.932  INFO [customer-service,,,] 31644 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-08 22:44:26.513  INFO [loan-service,,,] 19868 --- [SpringContextShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application LOAN-SERVICE with eureka with status DOWN
+2022-11-08 22:44:26.514  WARN [loan-service,,,] 19868 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1667927666514, current=DOWN, previous=UP]
+2022-11-08 22:44:26.514  INFO [loan-service,,,] 19868 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_LOAN-SERVICE/DESKTOP-29U9NHN:loan-service:9003: registering service...
+2022-11-08 22:44:26.520  INFO [loan-service,,,] 19868 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-11-08 22:44:26.528  INFO [loan-service,,,] 19868 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_LOAN-SERVICE/DESKTOP-29U9NHN:loan-service:9003 - registration status: 204
+2022-11-08 22:44:26.528  INFO [loan-service,,,] 19868 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-08 22:44:26.529  INFO [loan-service,,,] 19868 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-11-08 22:44:27.472  INFO [loan-service,,,] 19868 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-08 22:44:27.477  INFO [loan-service,,,] 19868 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-08 22:44:27.478  INFO [loan-service,,,] 19868 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-11-08 22:44:30.489  INFO [loan-service,,,] 19868 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-11-08 22:44:30.508  INFO [loan-service,,,] 19868 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_LOAN-SERVICE/DESKTOP-29U9NHN:loan-service:9003 - deregister  status: 200
+2022-11-08 22:44:30.519  INFO [loan-service,,,] 19868 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-11-08 22:44:37.652  INFO [loan-service,,,] 34296 --- [main] com.aruntech.LoanServiceApplication      : No active profile set, falling back to default profiles: default
+2022-11-08 22:44:38.753  INFO [loan-service,,,] 34296 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-08 22:44:39.090  INFO [loan-service,,,] 34296 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 319ms. Found 1 JPA repository interfaces.
+2022-11-08 22:44:39.905  INFO [loan-service,,,] 34296 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=2cfb737f-fd29-3de8-8652-ec26372d1d70
+2022-11-08 22:44:41.699  INFO [loan-service,,,] 34296 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9003 (http)
+2022-11-08 22:44:41.717  INFO [loan-service,,,] 34296 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-08 22:44:41.717  INFO [loan-service,,,] 34296 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-11-08 22:44:42.482  INFO [loan-service,,,] 34296 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-08 22:44:42.484  INFO [loan-service,,,] 34296 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4804 ms
+2022-11-08 22:44:42.576  INFO [loan-service,,,] 34296 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-08 22:44:42.882  INFO [loan-service,,,] 34296 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-08 22:44:42.891  INFO [loan-service,,,] 34296 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:loan'
+2022-11-08 22:44:43.818  INFO [loan-service,,,] 34296 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-08 22:44:43.931  INFO [loan-service,,,] 34296 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2022-11-08 22:44:44.236  INFO [loan-service,,,] 34296 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2022-11-08 22:44:44.528  INFO [loan-service,,,] 34296 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-11-08 22:44:45.568  INFO [loan-service,,,] 34296 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-08 22:44:45.577  INFO [loan-service,,,] 34296 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-08 22:44:46.302  WARN [loan-service,,,] 34296 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-11-08 22:44:46.303  INFO [loan-service,,,] 34296 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-11-08 22:44:46.313  WARN [loan-service,,,] 34296 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-11-08 22:44:46.314  INFO [loan-service,,,] 34296 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-11-08 22:44:46.450  WARN [loan-service,,,] 34296 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-08 22:44:46.724  INFO [loan-service,,,] 34296 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-11-08 22:44:48.330  WARN [loan-service,,,] 34296 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2022-11-08 22:44:49.084  INFO [loan-service,,,] 34296 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-11-08 22:44:49.185  INFO [loan-service,,,] 34296 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-11-08 22:44:50.109  INFO [loan-service,,,] 34296 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2022-11-08 22:44:50.111  INFO [loan-service,,,] 34296 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2022-11-08 22:44:50.406  INFO [loan-service,,,] 34296 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2022-11-08 22:44:50.407  INFO [loan-service,,,] 34296 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2022-11-08 22:44:50.829  INFO [loan-service,,,] 34296 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-08 22:44:51.323  INFO [loan-service,,,] 34296 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-11-08 22:44:51.323  INFO [loan-service,,,] 34296 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-11-08 22:44:51.324  INFO [loan-service,,,] 34296 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-11-08 22:44:51.324  INFO [loan-service,,,] 34296 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-11-08 22:44:51.324  INFO [loan-service,,,] 34296 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-11-08 22:44:51.325  INFO [loan-service,,,] 34296 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-11-08 22:44:51.325  INFO [loan-service,,,] 34296 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-11-08 22:44:51.770  INFO [loan-service,,,] 34296 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-11-08 22:44:51.775  INFO [loan-service,,,] 34296 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-11-08 22:44:51.780  INFO [loan-service,,,] 34296 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-11-08 22:44:51.783  INFO [loan-service,,,] 34296 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1667927691782 with initial instances count: 3
+2022-11-08 22:44:51.794  INFO [loan-service,,,] 34296 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application LOAN-SERVICE with eureka with status UP
+2022-11-08 22:44:51.794  INFO [loan-service,,,] 34296 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1667927691794, current=UP, previous=STARTING]
+2022-11-08 22:44:51.798  INFO [loan-service,,,] 34296 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_LOAN-SERVICE/DESKTOP-29U9NHN:loan-service:9003: registering service...
+2022-11-08 22:44:51.871  INFO [loan-service,,,] 34296 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9003 (http) with context path ''
+2022-11-08 22:44:51.872  INFO [loan-service,,,] 34296 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9003
+2022-11-08 22:44:51.877  INFO [loan-service,,,] 34296 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_LOAN-SERVICE/DESKTOP-29U9NHN:loan-service:9003 - registration status: 204
+2022-11-08 22:44:52.258  INFO [loan-service,,,] 34296 --- [main] com.aruntech.LoanServiceApplication      : Started LoanServiceApplication in 16.737 seconds (JVM running for 18.163)
+2022-11-08 22:45:08.569  INFO [banking-service,5664d4cac20d5768,5664d4cac20d5768,true] 10016 --- [http-nio-9001-exec-4] com.aruntech.service.BankingService      : banking-service: Creating the new bank account
+2022-11-08 22:45:08.569  INFO [banking-service,5664d4cac20d5768,5664d4cac20d5768,true] 10016 --- [http-nio-9001-exec-4] com.aruntech.service.BankingService      : banking-service: Payload for creating the new customer: CreateCustomerRequest{name='Carbin', balance=2500.0, phone='6542102452', emailId='carbin@gmail.com'}
+2022-11-08 22:45:08.569  INFO [banking-service,5664d4cac20d5768,5664d4cac20d5768,true] 10016 --- [http-nio-9001-exec-4] com.aruntech.service.BankingService      : banking-service: Making call to customer-service to create the customer
+2022-11-08 22:45:17.060  INFO [banking-service,41e441487e0b7571,41e441487e0b7571,true] 10016 --- [http-nio-9001-exec-5] com.aruntech.service.BankingService      : banking-service: Creating the new bank account
+2022-11-08 22:45:17.061  INFO [banking-service,41e441487e0b7571,41e441487e0b7571,true] 10016 --- [http-nio-9001-exec-5] com.aruntech.service.BankingService      : banking-service: Payload for creating the new customer: CreateCustomerRequest{name='Carbin', balance=2500.0, phone='6542102452', emailId='carbin@gmail.com'}
+2022-11-08 22:45:17.061  INFO [banking-service,41e441487e0b7571,41e441487e0b7571,true] 10016 --- [http-nio-9001-exec-5] com.aruntech.service.BankingService      : banking-service: Making call to customer-service to create the customer
+2022-11-08 22:45:40.103  INFO [banking-service,,,] 10016 --- [SpringContextShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application BANKING-SERVICE with eureka with status DOWN
+2022-11-08 22:45:40.104  WARN [banking-service,,,] 10016 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1667927740104, current=DOWN, previous=UP]
+2022-11-08 22:45:40.105  INFO [banking-service,,,] 10016 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BANKING-SERVICE/DESKTOP-29U9NHN:banking-service:9001: registering service...
+2022-11-08 22:45:40.109  INFO [banking-service,,,] 10016 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-11-08 22:45:40.121  INFO [banking-service,,,] 10016 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BANKING-SERVICE/DESKTOP-29U9NHN:banking-service:9001 - registration status: 204
+2022-11-08 22:45:40.489  INFO [banking-service,,,] 10016 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-11-08 22:45:43.508  INFO [banking-service,,,] 10016 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-11-08 22:45:43.523  INFO [banking-service,,,] 10016 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BANKING-SERVICE/DESKTOP-29U9NHN:banking-service:9001 - deregister  status: 200
+2022-11-08 22:45:43.538  INFO [banking-service,,,] 10016 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-11-08 22:45:50.238  INFO [banking-service,,,] 32884 --- [main] com.aruntech.BankingServiceApplication   : No active profile set, falling back to default profiles: default
+2022-11-08 22:45:51.168  INFO [banking-service,,,] 32884 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=10e5513e-b13f-3eed-bfb0-778181887dad
+2022-11-08 22:45:52.237  INFO [banking-service,,,] 32884 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9001 (http)
+2022-11-08 22:45:52.247  INFO [banking-service,,,] 32884 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-08 22:45:52.247  INFO [banking-service,,,] 32884 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-11-08 22:45:52.851  INFO [banking-service,,,] 32884 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-08 22:45:52.852  INFO [banking-service,,,] 32884 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2599 ms
+2022-11-08 22:45:54.001  WARN [banking-service,,,] 32884 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-11-08 22:45:54.002  INFO [banking-service,,,] 32884 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-11-08 22:45:54.012  WARN [banking-service,,,] 32884 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-11-08 22:45:54.013  INFO [banking-service,,,] 32884 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-11-08 22:45:54.861  INFO [banking-service,,,] 32884 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-11-08 22:45:56.603  WARN [banking-service,,,] 32884 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2022-11-08 22:45:57.332  INFO [banking-service,,,] 32884 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-11-08 22:45:57.482  INFO [banking-service,,,] 32884 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-11-08 22:45:58.009  INFO [banking-service,,,] 32884 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2022-11-08 22:45:58.010  INFO [banking-service,,,] 32884 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2022-11-08 22:45:58.144  INFO [banking-service,,,] 32884 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2022-11-08 22:45:58.144  INFO [banking-service,,,] 32884 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2022-11-08 22:45:58.327  INFO [banking-service,,,] 32884 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-08 22:45:58.597  INFO [banking-service,,,] 32884 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-11-08 22:45:58.597  INFO [banking-service,,,] 32884 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-11-08 22:45:58.597  INFO [banking-service,,,] 32884 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-11-08 22:45:58.597  INFO [banking-service,,,] 32884 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-11-08 22:45:58.597  INFO [banking-service,,,] 32884 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-11-08 22:45:58.598  INFO [banking-service,,,] 32884 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-11-08 22:45:58.598  INFO [banking-service,,,] 32884 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-11-08 22:45:58.831  INFO [banking-service,,,] 32884 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-11-08 22:45:58.836  INFO [banking-service,,,] 32884 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-11-08 22:45:58.840  INFO [banking-service,,,] 32884 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-11-08 22:45:58.846  INFO [banking-service,,,] 32884 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1667927758844 with initial instances count: 3
+2022-11-08 22:45:58.856  INFO [banking-service,,,] 32884 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BANKING-SERVICE with eureka with status UP
+2022-11-08 22:45:58.857  INFO [banking-service,,,] 32884 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1667927758857, current=UP, previous=STARTING]
+2022-11-08 22:45:58.860  INFO [banking-service,,,] 32884 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BANKING-SERVICE/DESKTOP-29U9NHN:banking-service:9001: registering service...
+2022-11-08 22:45:58.937  INFO [banking-service,,,] 32884 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BANKING-SERVICE/DESKTOP-29U9NHN:banking-service:9001 - registration status: 204
+2022-11-08 22:45:58.938  INFO [banking-service,,,] 32884 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9001 (http) with context path ''
+2022-11-08 22:45:58.939  INFO [banking-service,,,] 32884 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9001
+2022-11-08 22:45:59.297  INFO [banking-service,,,] 32884 --- [main] com.aruntech.BankingServiceApplication   : Started BankingServiceApplication in 11.108 seconds (JVM running for 12.427)
+2022-11-08 22:46:12.517  INFO [banking-service,,,] 32884 --- [http-nio-9001-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-08 22:46:12.517  INFO [banking-service,,,] 32884 --- [http-nio-9001-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-08 22:46:12.533  INFO [banking-service,,,] 32884 --- [http-nio-9001-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2022-11-08 22:46:12.605  INFO [banking-service,c54b22eed58e16a5,c54b22eed58e16a5,true] 32884 --- [http-nio-9001-exec-4] com.aruntech.service.BankingService      : banking-service: Creating the new bank account
+2022-11-08 22:46:12.605  INFO [banking-service,c54b22eed58e16a5,c54b22eed58e16a5,true] 32884 --- [http-nio-9001-exec-4] com.aruntech.service.BankingService      : banking-service: Payload for creating the new customer: CreateCustomerRequest{name='Carbin', balance=2500.0, phone='6542102452', emailId='carbin@gmail.com'}
+2022-11-08 22:46:12.605  INFO [banking-service,c54b22eed58e16a5,c54b22eed58e16a5,true] 32884 --- [http-nio-9001-exec-4] com.aruntech.service.BankingService      : banking-service: Making call to customer-service to create the customer
+2022-11-08 22:46:12.790  INFO [customer-service,,,] 31644 --- [http-nio-9002-exec-9] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-08 22:46:12.792  INFO [customer-service,,,] 31644 --- [http-nio-9002-exec-9] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-08 22:46:13.074  INFO [customer-service,,,] 31644 --- [http-nio-9002-exec-9] o.s.web.servlet.DispatcherServlet        : Completed initialization in 281 ms
+2022-11-08 22:46:13.420  INFO [customer-service,c54b22eed58e16a5,426035390c2feb9a,true] 31644 --- [http-nio-9002-exec-9] com.aruntech.service.CustomerService     : customer-service: Create the new customer
+2022-11-08 22:46:13.579  INFO [customer-service,c54b22eed58e16a5,426035390c2feb9a,true] 31644 --- [http-nio-9002-exec-9] com.aruntech.service.CustomerService     : customer-service: New customer Customer{id=1, name='Carbin', accountNo=36916450, balance=2500.0, phone='6542102452', emailId='carbin@gmail.com'} was created successfully
+2022-11-08 22:46:13.689  INFO [banking-service,c54b22eed58e16a5,c54b22eed58e16a5,true] 32884 --- [http-nio-9001-exec-4] com.aruntech.service.BankingService      : banking-service: Response from customer-service for the new customer: Customer{id=1, name='Carbin', accountNo=36916450, balance=2500.0, phone='6542102452', emailId='carbin@gmail.com', loanDetails=[]}
+2022-11-08 22:46:13.689  INFO [banking-service,c54b22eed58e16a5,c54b22eed58e16a5,true] 32884 --- [http-nio-9001-exec-4] com.aruntech.service.BankingService      : banking-service: Account was created with response: AccountCreateResponse{status='success', message='Successfully created the bank account', customerId='1', accountNo='36916450'}
+2022-11-08 22:46:53.284  INFO [banking-service,dea9773f50ac36c8,dea9773f50ac36c8,true] 32884 --- [http-nio-9001-exec-3] com.aruntech.service.BankingService      : banking-service: Apply for new loan with details LoanRequest{name='Carbin', age=39, custId=1, accountNo=36916450, income=30000.0, employmentType=govt, amount=200000.0, tenture=24}
+2022-11-08 22:46:53.388  INFO [loan-service,,,] 34296 --- [http-nio-9003-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-08 22:46:53.389  INFO [loan-service,,,] 34296 --- [http-nio-9003-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-08 22:46:53.419  INFO [loan-service,,,] 34296 --- [http-nio-9003-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 30 ms
+2022-11-08 22:46:53.564  INFO [loan-service,dea9773f50ac36c8,9ddf9f9481b9984c,true] 34296 --- [http-nio-9003-exec-2] com.aruntech.service.LoanService         : loan-service: Apply for the new loan with details LoanRequest{name='Carbin', age=39, custId=1, accountNo=36916450, income=30000.0, employmentType=govt, amount=200000.0, tenture=24}
+2022-11-08 22:46:53.680  INFO [customer-service,dea9773f50ac36c8,33ea33ee80934820,true] 31644 --- [http-nio-9002-exec-6] com.aruntech.service.CustomerService     : customer-service: Fetch the customer with id 1
+2022-11-08 22:46:53.867  INFO [customer-service,dea9773f50ac36c8,33ea33ee80934820,true] 31644 --- [http-nio-9002-exec-6] com.aruntech.service.CustomerService     : customer-service: Retrieved the customer with details Customer{id=1, name='Carbin', accountNo=36916450, balance=2500.0, phone='6542102452', emailId='carbin@gmail.com'}
+2022-11-08 22:46:53.976  INFO [loan-service,dea9773f50ac36c8,9ddf9f9481b9984c,true] 34296 --- [http-nio-9003-exec-2] com.aruntech.service.LoanService         : loan-service: The new loan Loan{id=1, amount=200000.0, tenture=24, customerId=1, accountNo=36916450} was added
+2022-11-08 22:46:53.977  INFO [loan-service,dea9773f50ac36c8,9ddf9f9481b9984c,true] 34296 --- [http-nio-9003-exec-2] com.aruntech.service.LoanService         : loan-service: New loan was created with details LoanStatus{id=1, status='ACCEPTED', message='You are eligible for the loan', amount=200000.0, tenture=24}
+2022-11-08 22:46:54.054  INFO [banking-service,dea9773f50ac36c8,dea9773f50ac36c8,true] 32884 --- [http-nio-9001-exec-3] com.aruntech.service.BankingService      : banking-service: response from loan-service is LoanStatus{id=1, status='ACCEPTED', message='You are eligible for the loan', amount=200000.0, tenture=24}
+2022-11-08 22:47:44.375  INFO [banking-service,efd23a4ddb0aa221,efd23a4ddb0aa221,true] 32884 --- [http-nio-9001-exec-2] com.aruntech.service.BankingService      : banking-service: Fetch the customer details with id 1
+2022-11-08 22:47:44.380  INFO [customer-service,efd23a4ddb0aa221,29eb8035e42b2580,true] 31644 --- [http-nio-9002-exec-1] com.aruntech.service.CustomerService     : customer-service: Fetch the customer with id 1
+2022-11-08 22:47:44.381  INFO [customer-service,efd23a4ddb0aa221,29eb8035e42b2580,true] 31644 --- [http-nio-9002-exec-1] com.aruntech.service.CustomerService     : customer-service: Retrieved the customer with details Customer{id=1, name='Carbin', accountNo=36916450, balance=2500.0, phone='6542102452', emailId='carbin@gmail.com'}
+2022-11-08 22:47:44.391  INFO [loan-service,efd23a4ddb0aa221,0bc71b1f36f6989a,true] 34296 --- [http-nio-9003-exec-1] com.aruntech.service.LoanService         : loan-service: Get all loans for the customer id 1
+2022-11-08 22:47:44.651  INFO [loan-service,efd23a4ddb0aa221,0bc71b1f36f6989a,true] 34296 --- [http-nio-9003-exec-1] com.aruntech.service.LoanService         : loan-service: Retrieved loan with details [Loan{id=1, amount=200000.0, tenture=24, customerId=1, accountNo=36916450}]
+2022-11-08 22:47:44.660  INFO [banking-service,efd23a4ddb0aa221,efd23a4ddb0aa221,true] 32884 --- [http-nio-9001-exec-2] com.aruntech.service.BankingService      : banking-service: Fetch the customer details Customer{id=1, name='Carbin', accountNo=36916450, balance=2500.0, phone='6542102452', emailId='carbin@gmail.com', loanDetails=[Loan{id=1, amount=200000.0, tenture=24, customerId=1, accountNo=36916450}]}
+2022-11-08 22:48:01.948  INFO [customer-service,,,] 31644 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-08 22:49:51.333  INFO [loan-service,,,] 34296 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-08 22:50:09.920  INFO [banking-service,,,] 32884 --- [SpringContextShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application BANKING-SERVICE with eureka with status DOWN
+2022-11-08 22:50:09.921  WARN [banking-service,,,] 32884 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1667928009921, current=DOWN, previous=UP]
+2022-11-08 22:50:09.921  INFO [banking-service,,,] 32884 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BANKING-SERVICE/DESKTOP-29U9NHN:banking-service:9001: registering service...
+2022-11-08 22:50:09.926  INFO [banking-service,,,] 32884 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-11-08 22:50:09.935  INFO [banking-service,,,] 32884 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BANKING-SERVICE/DESKTOP-29U9NHN:banking-service:9001 - registration status: 204
+2022-11-08 22:50:10.514  INFO [banking-service,,,] 32884 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-11-08 22:50:12.937  INFO [loan-service,,,] 34296 --- [SpringContextShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application LOAN-SERVICE with eureka with status DOWN
+2022-11-08 22:50:12.937  WARN [loan-service,,,] 34296 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1667928012937, current=DOWN, previous=UP]
+2022-11-08 22:50:12.938  INFO [loan-service,,,] 34296 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_LOAN-SERVICE/DESKTOP-29U9NHN:loan-service:9003: registering service...
+2022-11-08 22:50:12.942  INFO [loan-service,,,] 34296 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-11-08 22:50:12.944  INFO [loan-service,,,] 34296 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-08 22:50:12.945  INFO [loan-service,,,] 34296 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-11-08 22:50:12.956  INFO [loan-service,,,] 34296 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_LOAN-SERVICE/DESKTOP-29U9NHN:loan-service:9003 - registration status: 204
+2022-11-08 22:50:13.528  INFO [banking-service,,,] 32884 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-11-08 22:50:13.545  INFO [banking-service,,,] 32884 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BANKING-SERVICE/DESKTOP-29U9NHN:banking-service:9001 - deregister  status: 200
+2022-11-08 22:50:13.561  INFO [banking-service,,,] 32884 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-11-08 22:50:13.996  INFO [loan-service,,,] 34296 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-08 22:50:14.000  INFO [loan-service,,,] 34296 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-08 22:50:14.001  INFO [loan-service,,,] 34296 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-11-08 22:50:16.289  INFO [customer-service,,,] 31644 --- [SpringContextShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application CUSTOMER-SERVICE with eureka with status DOWN
+2022-11-08 22:50:16.290  WARN [customer-service,,,] 31644 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1667928016290, current=DOWN, previous=UP]
+2022-11-08 22:50:16.290  INFO [customer-service,,,] 31644 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOMER-SERVICE/DESKTOP-29U9NHN:customer-service:9002: registering service...
+2022-11-08 22:50:16.298  INFO [customer-service,,,] 31644 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-11-08 22:50:16.303  INFO [customer-service,,,] 31644 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-08 22:50:16.310  INFO [customer-service,,,] 31644 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOMER-SERVICE/DESKTOP-29U9NHN:customer-service:9002 - registration status: 204
+2022-11-08 22:50:16.311  INFO [customer-service,,,] 31644 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-11-08 22:50:17.006  INFO [loan-service,,,] 34296 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-11-08 22:50:17.021  INFO [loan-service,,,] 34296 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_LOAN-SERVICE/DESKTOP-29U9NHN:loan-service:9003 - deregister  status: 200
+2022-11-08 22:50:17.034  INFO [loan-service,,,] 34296 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-11-08 22:50:17.118  INFO [customer-service,,,] 31644 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-08 22:50:17.124  INFO [customer-service,,,] 31644 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-08 22:50:17.125  INFO [customer-service,,,] 31644 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-11-08 22:50:20.144  INFO [customer-service,,,] 31644 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-11-08 22:50:24.225 ERROR [customer-service,,,] 31644 --- [SpringContextShutdownHook] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.delete(WebResource.java:591) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.cancel(AbstractJerseyEurekaHttpClient.java:77) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:89) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:946) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:922) [eureka-client-1.9.17.jar:1.9.17]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_301]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_301]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_301]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_301]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:242) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:235) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:403) [spring-cloud-context-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:142) [spring-cloud-context-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:258) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1072) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1065) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1060) [spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1029) [spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:948) [spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_301]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:81) ~[na:1.8.0_301]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476) ~[na:1.8.0_301]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218) ~[na:1.8.0_301]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200) ~[na:1.8.0_301]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162) ~[na:1.8.0_301]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394) ~[na:1.8.0_301]
+	at java.net.Socket.connect(Socket.java:606) ~[na:1.8.0_301]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121) ~[httpclient-4.5.11.jar:4.5.11]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.5.11.jar:4.5.11]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.11.jar:4.5.11]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.11.jar:4.5.11]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605) ~[httpclient-4.5.11.jar:4.5.11]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440) ~[httpclient-4.5.11.jar:4.5.11]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.11.jar:4.5.11]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.11.jar:4.5.11]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.11.jar:4.5.11]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	... 41 common frames omitted
+
+2022-11-08 22:50:24.226  WARN [customer-service,,,] 31644 --- [SpringContextShutdownHook] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2022-11-08 22:50:28.295 ERROR [customer-service,,,] 31644 --- [SpringContextShutdownHook] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.delete(WebResource.java:591) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.cancel(AbstractJerseyEurekaHttpClient.java:77) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:946) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:922) [eureka-client-1.9.17.jar:1.9.17]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_301]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_301]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_301]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_301]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:242) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:235) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:403) [spring-cloud-context-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:142) [spring-cloud-context-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:258) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1072) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1065) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1060) [spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1029) [spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:948) [spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_301]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:81) ~[na:1.8.0_301]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476) ~[na:1.8.0_301]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218) ~[na:1.8.0_301]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200) ~[na:1.8.0_301]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162) ~[na:1.8.0_301]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394) ~[na:1.8.0_301]
+	at java.net.Socket.connect(Socket.java:606) ~[na:1.8.0_301]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121) ~[httpclient-4.5.11.jar:4.5.11]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.5.11.jar:4.5.11]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.11.jar:4.5.11]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.11.jar:4.5.11]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605) ~[httpclient-4.5.11.jar:4.5.11]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440) ~[httpclient-4.5.11.jar:4.5.11]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.11.jar:4.5.11]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.11.jar:4.5.11]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.11.jar:4.5.11]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	... 42 common frames omitted
+
+2022-11-08 22:50:28.296  WARN [customer-service,,,] 31644 --- [SpringContextShutdownHook] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2022-11-08 22:50:28.297 ERROR [customer-service,,,] 31644 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOMER-SERVICE/DESKTOP-29U9NHN:customer-service:9002 - de-registration failedCannot execute request on any known server
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:946) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:922) [eureka-client-1.9.17.jar:1.9.17]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_301]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_301]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_301]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_301]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:242) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:235) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:403) [spring-cloud-context-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:142) [spring-cloud-context-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:258) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1072) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1065) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1060) [spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1029) [spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:948) [spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+
+2022-11-08 22:50:28.314  INFO [customer-service,,,] 31644 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient

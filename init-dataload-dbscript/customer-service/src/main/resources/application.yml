@@ -1,0 +1,14 @@
+server:
+  port: 9002
+
+spring:
+  h2:
+    console:
+      enabled: true
+    datasource:
+      initialization-mode: always
+  jpa:
+    hibernate:
+      ddl-auto: none
+  application:
+    name: customer-service

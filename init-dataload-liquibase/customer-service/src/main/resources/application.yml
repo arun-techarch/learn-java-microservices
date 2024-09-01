@@ -1,0 +1,18 @@
+server:
+  port: 9002
+
+spring:
+  h2:
+    console:
+      enabled: true
+  liquibase:
+    drop-first: true
+    change-log: classpath:db/changelog/changelog.yml
+  application:
+    name: customer-service
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

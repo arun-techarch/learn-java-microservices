@@ -1,0 +1,99 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: aruntech
+      changes:
+        - createTable:
+            tableName: customer
+            columns:
+              - column:
+                  name: id
+                  type: int
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: name
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: account_no
+                  type: int
+                  constraints:
+                    nullable: false
+              - column:
+                  name: balance
+                  type: numeric(20, 2)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: phone
+                  type: varchar(12)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: email_id
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
+
+  - changeSet:
+      id: 2
+      author: aruntech
+      changes:
+        - insert:
+            tableName: customer
+            columns:
+              - column:
+                  name: name
+                  value: Arun
+              - column:
+                  name: account_no
+                  value: 201001040
+              - column:
+                  name: balance
+                  value: 3000.00
+              - column:
+                  name: phone
+                  value: 123456789
+              - column:
+                  name: email_id
+                  value: arun@gmail.com
+        - insert:
+            tableName: customer
+            columns:
+              - column:
+                  name: name
+                  value: Andrino
+              - column:
+                  name: account_no
+                  value: 201001041
+              - column:
+                  name: balance
+                  value: 2500.00
+              - column:
+                  name: phone
+                  value: 234456789
+              - column:
+                  name: email_id
+                  value: andrino@gmail.com
+        - insert:
+            tableName: customer
+            columns:
+              - column:
+                  name: name
+                  value: Vibin
+              - column:
+                  name: account_no
+                  value: 201001042
+              - column:
+                  name: balance
+                  value: 2000.00
+              - column:
+                  name: phone
+                  value: 345678901
+              - column:
+                  name: email_id
+                  value: vibin@gmail.com

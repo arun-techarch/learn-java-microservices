@@ -1,0 +1,264 @@
+2022-10-17 17:03:28.653  INFO 95696 --- [main] com.aruntech.BankingServiceApplication   : No active profile set, falling back to default profiles: default
+2022-10-17 17:03:29.600  INFO 95696 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-17 17:03:29.796  INFO 95696 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 185ms. Found 1 JPA repository interfaces.
+2022-10-17 17:03:30.162  INFO 95696 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ff2c2b34-cf77-35a9-95bb-03d0451eca51
+2022-10-17 17:03:30.338  INFO 95696 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.aruntech.service.CustomerConsumer' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-17 17:03:30.340  INFO 95696 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.aruntech.service.LoanConsumer' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-17 17:03:31.364  INFO 95696 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9001 (http)
+2022-10-17 17:03:31.378  INFO 95696 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-17 17:03:31.378  INFO 95696 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-10-17 17:03:32.194  INFO 95696 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-17 17:03:32.195  INFO 95696 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3478 ms
+2022-10-17 17:03:32.291  INFO 95696 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-17 17:03:32.825  INFO 95696 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-17 17:03:32.845  INFO 95696 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:banking'
+2022-10-17 17:03:33.397  INFO 95696 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-17 17:03:33.681  INFO 95696 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2022-10-17 17:03:34.192  INFO 95696 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2022-10-17 17:03:34.622  INFO 95696 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-10-17 17:03:36.349  INFO 95696 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-17 17:03:36.361  INFO 95696 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-17 17:03:37.287  WARN 95696 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-17 17:03:37.565  WARN 95696 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-10-17 17:03:37.566  INFO 95696 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-10-17 17:03:37.722  WARN 95696 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-10-17 17:03:37.723  INFO 95696 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-10-17 17:03:38.048  INFO 95696 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-10-17 17:03:39.252  WARN 95696 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2022-10-17 17:03:39.339  INFO 95696 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-10-17 17:03:39.483  INFO 95696 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-10-17 17:03:39.976  INFO 95696 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2022-10-17 17:03:39.977  INFO 95696 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2022-10-17 17:03:40.202  INFO 95696 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2022-10-17 17:03:40.202  INFO 95696 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2022-10-17 17:03:40.392  INFO 95696 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-10-17 17:03:40.526  INFO 95696 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-10-17 17:03:40.526  INFO 95696 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-10-17 17:03:40.526  INFO 95696 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-10-17 17:03:40.526  INFO 95696 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-10-17 17:03:40.526  INFO 95696 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-10-17 17:03:40.526  INFO 95696 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-10-17 17:03:40.526  INFO 95696 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-10-17 17:03:40.836  INFO 95696 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-10-17 17:03:40.838  INFO 95696 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-10-17 17:03:40.842  INFO 95696 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-10-17 17:03:40.849  INFO 95696 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1666006420846 with initial instances count: 0
+2022-10-17 17:03:40.851  INFO 95696 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BANKING-SERVICE with eureka with status UP
+2022-10-17 17:03:40.852  INFO 95696 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1666006420852, current=UP, previous=STARTING]
+2022-10-17 17:03:40.855  INFO 95696 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BANKING-SERVICE/DESKTOP-29U9NHN:banking-service:9001: registering service...
+2022-10-17 17:03:40.974  INFO 95696 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9001 (http) with context path ''
+2022-10-17 17:03:40.976  INFO 95696 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9001
+2022-10-17 17:03:41.136  INFO 95696 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BANKING-SERVICE/DESKTOP-29U9NHN:banking-service:9001 - registration status: 204
+2022-10-17 17:03:41.301  INFO 95696 --- [main] com.aruntech.BankingServiceApplication   : Started BankingServiceApplication in 14.564 seconds (JVM running for 16.271)
+2022-10-17 17:03:56.575  INFO 90312 --- [main] com.aruntech.CustomerServiceApplication  : No active profile set, falling back to default profiles: default
+2022-10-17 17:03:57.522  INFO 90312 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-17 17:03:57.729  INFO 90312 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 182ms. Found 1 JPA repository interfaces.
+2022-10-17 17:03:58.077  INFO 90312 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0db175ea-235b-3b53-8f7b-1b3108c82cf8
+2022-10-17 17:03:58.918  INFO 90312 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9002 (http)
+2022-10-17 17:03:58.937  INFO 90312 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-17 17:03:58.937  INFO 90312 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-10-17 17:03:59.682  INFO 90312 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-17 17:03:59.682  INFO 90312 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3072 ms
+2022-10-17 17:03:59.746  INFO 90312 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-17 17:04:00.243  INFO 90312 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-17 17:04:00.267  INFO 90312 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:customer'
+2022-10-17 17:04:00.629  INFO 90312 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-17 17:04:00.817  INFO 90312 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2022-10-17 17:04:01.187  INFO 90312 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2022-10-17 17:04:01.452  INFO 90312 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-10-17 17:04:03.154  INFO 90312 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-17 17:04:03.176  INFO 90312 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-17 17:04:04.203  WARN 90312 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-10-17 17:04:04.203  INFO 90312 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-10-17 17:04:04.217  WARN 90312 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-10-17 17:04:04.217  INFO 90312 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-10-17 17:04:04.377  WARN 90312 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-17 17:04:04.726  INFO 90312 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-10-17 17:04:06.532  WARN 90312 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2022-10-17 17:04:06.657  INFO 90312 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-10-17 17:04:06.865  INFO 90312 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-10-17 17:04:07.687  INFO 90312 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2022-10-17 17:04:07.689  INFO 90312 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2022-10-17 17:04:08.018  INFO 90312 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2022-10-17 17:04:08.019  INFO 90312 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2022-10-17 17:04:08.339  INFO 90312 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-10-17 17:04:08.541  INFO 90312 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-10-17 17:04:08.541  INFO 90312 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-10-17 17:04:08.542  INFO 90312 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-10-17 17:04:08.542  INFO 90312 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-10-17 17:04:08.542  INFO 90312 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-10-17 17:04:08.543  INFO 90312 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-10-17 17:04:08.543  INFO 90312 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-10-17 17:04:08.884  INFO 90312 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-10-17 17:04:08.889  INFO 90312 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-10-17 17:04:08.893  INFO 90312 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-10-17 17:04:08.898  INFO 90312 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1666006448896 with initial instances count: 1
+2022-10-17 17:04:08.902  INFO 90312 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CUSTOMER-SERVICE with eureka with status UP
+2022-10-17 17:04:08.903  INFO 90312 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1666006448903, current=UP, previous=STARTING]
+2022-10-17 17:04:08.905  INFO 90312 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOMER-SERVICE/DESKTOP-29U9NHN:customer-service:9002: registering service...
+2022-10-17 17:04:08.991  INFO 90312 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOMER-SERVICE/DESKTOP-29U9NHN:customer-service:9002 - registration status: 204
+2022-10-17 17:04:09.003  INFO 90312 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9002 (http) with context path ''
+2022-10-17 17:04:09.005  INFO 90312 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9002
+2022-10-17 17:04:09.342  INFO 90312 --- [main] com.aruntech.CustomerServiceApplication  : Started CustomerServiceApplication in 14.846 seconds (JVM running for 16.293)
+2022-10-17 17:04:10.843  INFO 95696 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-10-17 17:04:10.844  INFO 95696 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-10-17 17:04:10.844  INFO 95696 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-10-17 17:04:10.844  INFO 95696 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-10-17 17:04:10.845  INFO 95696 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-10-17 17:04:10.845  INFO 95696 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2022-10-17 17:04:10.845  INFO 95696 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-10-17 17:04:10.891  INFO 95696 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-10-17 17:04:26.727  INFO 102288 --- [main] com.aruntech.LoanServiceApplication      : No active profile set, falling back to default profiles: default
+2022-10-17 17:04:27.868  INFO 102288 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-17 17:04:28.089  INFO 102288 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 206ms. Found 2 JPA repository interfaces.
+2022-10-17 17:04:28.483  INFO 102288 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=94595d84-ed80-300c-8fef-1bdb379668b2
+2022-10-17 17:04:28.636  INFO 102288 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.aruntech.service.CustomerConsumer' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-17 17:04:29.378  INFO 102288 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9003 (http)
+2022-10-17 17:04:29.391  INFO 102288 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-17 17:04:29.392  INFO 102288 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-10-17 17:04:30.112  INFO 102288 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-17 17:04:30.113  INFO 102288 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3350 ms
+2022-10-17 17:04:30.170  INFO 102288 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-17 17:04:30.486  INFO 102288 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-17 17:04:30.495  INFO 102288 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:loan'
+2022-10-17 17:04:30.732  INFO 102288 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-17 17:04:30.908  INFO 102288 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2022-10-17 17:04:31.148  INFO 102288 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2022-10-17 17:04:31.306  INFO 102288 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-10-17 17:04:32.391  INFO 102288 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-17 17:04:32.404  INFO 102288 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-17 17:04:33.701  WARN 102288 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-17 17:04:34.111  WARN 102288 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-10-17 17:04:34.112  INFO 102288 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-10-17 17:04:34.181  WARN 102288 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-10-17 17:04:34.182  INFO 102288 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-10-17 17:04:34.931  INFO 102288 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-10-17 17:04:37.197  WARN 102288 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2022-10-17 17:04:37.347  INFO 102288 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-10-17 17:04:37.539  INFO 102288 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-10-17 17:04:38.522  INFO 102288 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2022-10-17 17:04:38.523  INFO 102288 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2022-10-17 17:04:38.843  INFO 102288 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2022-10-17 17:04:38.843  INFO 102288 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2022-10-17 17:04:39.229  INFO 102288 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-10-17 17:04:39.433  INFO 102288 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-10-17 17:04:39.434  INFO 102288 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-10-17 17:04:39.434  INFO 102288 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-10-17 17:04:39.434  INFO 102288 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-10-17 17:04:39.434  INFO 102288 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-10-17 17:04:39.434  INFO 102288 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-10-17 17:04:39.434  INFO 102288 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-10-17 17:04:39.839  INFO 102288 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-10-17 17:04:39.847  INFO 102288 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-10-17 17:04:39.851  INFO 102288 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-10-17 17:04:39.857  INFO 102288 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1666006479855 with initial instances count: 2
+2022-10-17 17:04:39.861  INFO 102288 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application LOAN-SERVICE with eureka with status UP
+2022-10-17 17:04:39.862  INFO 102288 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1666006479862, current=UP, previous=STARTING]
+2022-10-17 17:04:39.866  INFO 102288 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_LOAN-SERVICE/DESKTOP-29U9NHN:loan-service:9003: registering service...
+2022-10-17 17:04:39.953  INFO 102288 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_LOAN-SERVICE/DESKTOP-29U9NHN:loan-service:9003 - registration status: 204
+2022-10-17 17:04:39.967  INFO 102288 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9003 (http) with context path ''
+2022-10-17 17:04:39.968  INFO 102288 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9003
+2022-10-17 17:04:40.388  INFO 102288 --- [main] com.aruntech.LoanServiceApplication      : Started LoanServiceApplication in 15.927 seconds (JVM running for 18.065)
+2022-10-17 17:06:58.023  INFO 95696 --- [http-nio-9001-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-17 17:06:58.032  INFO 95696 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-17 17:06:58.221  INFO 95696 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 188 ms
+2022-10-17 17:06:58.550  INFO 95696 --- [http-nio-9001-exec-1] com.aruntech.service.BankingService      : banking-service: Creating the new bank account
+2022-10-17 17:06:58.551  INFO 95696 --- [http-nio-9001-exec-1] com.aruntech.service.BankingService      : banking-service: Payload for creating the new customer: CreateCustomerRequest{name='Arun', balance=2000.0, phone='xxxxxxxxxx', emailId='xxxx@gmail.com'}
+2022-10-17 17:06:58.552  INFO 95696 --- [http-nio-9001-exec-1] com.aruntech.service.BankingService      : banking-service: Making call to customer-service to create the customer
+2022-10-17 17:06:59.587  INFO 95696 --- [http-nio-9001-exec-1] c.netflix.config.ChainedDynamicProperty  : Flipping property: customer-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2022-10-17 17:06:59.688  INFO 95696 --- [http-nio-9001-exec-1] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook installed for: NFLoadBalancer-PingTimer-customer-service
+2022-10-17 17:06:59.690  INFO 95696 --- [http-nio-9001-exec-1] c.netflix.loadbalancer.BaseLoadBalancer  : Client: customer-service instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=customer-service,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2022-10-17 17:06:59.709  INFO 95696 --- [http-nio-9001-exec-1] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
+2022-10-17 17:06:59.785  INFO 95696 --- [http-nio-9001-exec-1] c.netflix.config.ChainedDynamicProperty  : Flipping property: customer-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2022-10-17 17:06:59.792  INFO 95696 --- [http-nio-9001-exec-1] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client customer-service initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=customer-service,current list of Servers=[DESKTOP-29U9NHN:9002],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:DESKTOP-29U9NHN:9002;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 05:30:00 IST 1970;	First connection made: Thu Jan 01 05:30:00 IST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@5fa9fc88
+2022-10-17 17:07:00.353  INFO 90312 --- [http-nio-9002-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-17 17:07:00.361  INFO 90312 --- [http-nio-9002-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-17 17:07:00.544  INFO 90312 --- [http-nio-9002-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 183 ms
+2022-10-17 17:07:00.723  INFO 95696 --- [PollingServerListUpdater-0] c.netflix.config.ChainedDynamicProperty  : Flipping property: customer-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2022-10-17 17:07:00.923  INFO 90312 --- [http-nio-9002-exec-1] com.aruntech.service.CustomerService     : customer-service: Create the new customer
+2022-10-17 17:07:01.347  INFO 90312 --- [http-nio-9002-exec-1] com.aruntech.service.CustomerService     : customer-service: New customer Customer{id=1, name='Arun', accountNo=1780934, balance=2000.0, phone='xxxxxxxxxx', emailId='xxxx@gmail.com'} was created successfully
+2022-10-17 17:07:12.313  INFO 95696 --- [http-nio-9001-exec-5] com.aruntech.service.BankingService      : banking-service: Creating the new bank account
+2022-10-17 17:07:12.313  INFO 95696 --- [http-nio-9001-exec-5] com.aruntech.service.BankingService      : banking-service: Payload for creating the new customer: CreateCustomerRequest{name='Arun', balance=2000.0, phone='xxxxxxxxxx', emailId='xxxx@gmail.com'}
+2022-10-17 17:07:12.314  INFO 95696 --- [http-nio-9001-exec-5] com.aruntech.service.BankingService      : banking-service: Making call to customer-service to create the customer
+2022-10-17 17:07:12.324  INFO 90312 --- [http-nio-9002-exec-2] com.aruntech.service.CustomerService     : customer-service: Create the new customer
+2022-10-17 17:07:12.330  INFO 90312 --- [http-nio-9002-exec-2] com.aruntech.service.CustomerService     : customer-service: New customer Customer{id=2, name='Arun', accountNo=98745264, balance=2000.0, phone='xxxxxxxxxx', emailId='xxxx@gmail.com'} was created successfully
+2022-10-17 17:07:12.373  INFO 95696 --- [http-nio-9001-exec-5] com.aruntech.service.BankingService      : banking-service: Response from customer-service for the new customer: Customer{id=2, name='Arun', accountNo=98745264, balance=2000.0, phone='xxxxxxxxxx', emailId='xxxx@gmail.com', loanDetails=[]}
+2022-10-17 17:07:12.629  INFO 95696 --- [http-nio-9001-exec-5] com.aruntech.service.BankingService      : banking-service: Account was created with response: AccountCreateResponse{status='success', message='Successfully created the bank account', customerId='2', accountNo='98745264'}
+2022-10-17 17:07:38.592  INFO 102288 --- [SpringContextShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application LOAN-SERVICE with eureka with status DOWN
+2022-10-17 17:07:38.598  WARN 102288 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1666006658598, current=DOWN, previous=UP]
+2022-10-17 17:07:38.599  INFO 102288 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_LOAN-SERVICE/DESKTOP-29U9NHN:loan-service:9003: registering service...
+2022-10-17 17:07:38.635  INFO 102288 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_LOAN-SERVICE/DESKTOP-29U9NHN:loan-service:9003 - registration status: 204
+2022-10-17 17:07:38.635  INFO 102288 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-10-17 17:07:38.653  INFO 102288 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-17 17:07:38.664  INFO 102288 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-10-17 17:07:38.835  INFO 102288 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-17 17:07:38.842  INFO 102288 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-17 17:07:38.844  INFO 102288 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-10-17 17:07:41.856  WARN 102288 --- [DiscoveryClient-0] c.netflix.discovery.TimedSupervisorTask  : task supervisor shutting down, can't accept the task
+2022-10-17 17:07:41.862  INFO 102288 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-10-17 17:07:41.905  INFO 102288 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_LOAN-SERVICE/DESKTOP-29U9NHN:loan-service:9003 - deregister  status: 200
+2022-10-17 17:07:41.927  INFO 102288 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-10-17 17:07:43.446  INFO 90312 --- [SpringContextShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application CUSTOMER-SERVICE with eureka with status DOWN
+2022-10-17 17:07:43.448  WARN 90312 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1666006663448, current=DOWN, previous=UP]
+2022-10-17 17:07:43.450  INFO 90312 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOMER-SERVICE/DESKTOP-29U9NHN:customer-service:9002: registering service...
+2022-10-17 17:07:43.473  INFO 90312 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOMER-SERVICE/DESKTOP-29U9NHN:customer-service:9002 - registration status: 204
+2022-10-17 17:07:43.475  INFO 90312 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-10-17 17:07:43.484  INFO 90312 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-17 17:07:43.489  INFO 90312 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-10-17 17:07:43.664  INFO 90312 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-17 17:07:43.669  INFO 90312 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-17 17:07:43.671  INFO 90312 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-10-17 17:07:46.698  INFO 90312 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-10-17 17:07:46.712  INFO 90312 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOMER-SERVICE/DESKTOP-29U9NHN:customer-service:9002 - deregister  status: 200
+2022-10-17 17:07:46.852  INFO 90312 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-10-17 17:07:51.242  INFO 95696 --- [Thread-10] c.n.l.PollingServerListUpdater           : Shutting down the Executor Pool for PollingServerListUpdater
+2022-10-17 17:07:51.243  INFO 95696 --- [SpringContextShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application BANKING-SERVICE with eureka with status DOWN
+2022-10-17 17:07:51.243  WARN 95696 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1666006671243, current=DOWN, previous=UP]
+2022-10-17 17:07:51.245  INFO 95696 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BANKING-SERVICE/DESKTOP-29U9NHN:banking-service:9001: registering service...
+2022-10-17 17:07:51.252  INFO 95696 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-10-17 17:07:51.261  INFO 95696 --- [SpringContextShutdownHook] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook removed for: NFLoadBalancer-PingTimer-customer-service
+2022-10-17 17:07:51.265  INFO 95696 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BANKING-SERVICE/DESKTOP-29U9NHN:banking-service:9001 - registration status: 204
+2022-10-17 17:07:51.271  INFO 95696 --- [SpringContextShutdownHook] c.n.u.concurrent.ShutdownEnabledTimer    : Exception caught (might be ok if at shutdown)
+
+java.lang.IllegalStateException: Shutdown in progress
+	at java.lang.ApplicationShutdownHooks.remove(ApplicationShutdownHooks.java:82) ~[na:1.8.0_301]
+	at java.lang.Runtime.removeShutdownHook(Runtime.java:239) ~[na:1.8.0_301]
+	at com.netflix.util.concurrent.ShutdownEnabledTimer.cancel(ShutdownEnabledTimer.java:70) ~[netflix-commons-util-0.3.0.jar:0.3.0]
+	at com.netflix.loadbalancer.BaseLoadBalancer.cancelPingTask(BaseLoadBalancer.java:632) [ribbon-loadbalancer-2.3.0.jar:2.3.0]
+	at com.netflix.loadbalancer.BaseLoadBalancer.shutdown(BaseLoadBalancer.java:883) [ribbon-loadbalancer-2.3.0.jar:2.3.0]
+	at com.netflix.loadbalancer.DynamicServerListLoadBalancer.shutdown(DynamicServerListLoadBalancer.java:285) [ribbon-loadbalancer-2.3.0.jar:2.3.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_301]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_301]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_301]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_301]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.invokeCustomDestroyMethod(DisposableBeanAdapter.java:339) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:273) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1072) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1065) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1060) [spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1029) [spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:978) [spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:92) [spring-cloud-context-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:258) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1072) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1065) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1060) [spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1029) [spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:948) [spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+
+2022-10-17 17:07:51.281  INFO 95696 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-17 17:07:51.292  INFO 95696 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-10-17 17:07:51.473  INFO 95696 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-17 17:07:51.480  INFO 95696 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-17 17:07:51.481  INFO 95696 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-10-17 17:07:54.492  INFO 95696 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-10-17 17:07:54.509  INFO 95696 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BANKING-SERVICE/DESKTOP-29U9NHN:banking-service:9001 - deregister  status: 200
+2022-10-17 17:07:54.527  INFO 95696 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient

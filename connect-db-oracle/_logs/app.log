@@ -1,0 +1,805 @@
+2022-10-17 20:54:18.549  INFO 135804 --- [main] com.aruntech.CustomerServiceApplication  : No active profile set, falling back to default profiles: default
+2022-10-17 20:54:19.332  INFO 135804 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-17 20:54:19.639  INFO 135804 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 291ms. Found 1 JPA repository interfaces.
+2022-10-17 20:54:20.003  INFO 135804 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=66598fdd-d1c2-3bff-90aa-9fcd6921e153
+2022-10-17 20:54:21.363  INFO 135804 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9002 (http)
+2022-10-17 20:54:21.385  INFO 135804 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-17 20:54:21.386  INFO 135804 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-10-17 20:54:22.251  INFO 135804 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-17 20:54:22.251  INFO 135804 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3660 ms
+2022-10-17 20:54:23.428  INFO 135804 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-17 20:54:23.891  INFO 135804 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2022-10-17 20:54:24.441  INFO 135804 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2022-10-17 20:54:24.818  INFO 135804 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-17 20:54:26.376  INFO 135804 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-17 20:54:26.424  INFO 135804 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2022-10-17 20:55:52.747  INFO 135804 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-17 20:55:52.767  INFO 135804 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-17 20:55:53.601  WARN 135804 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-10-17 20:55:53.602  INFO 135804 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-10-17 20:55:53.618  WARN 135804 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-10-17 20:55:53.619  INFO 135804 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-10-17 20:55:53.747  WARN 135804 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-17 20:55:53.991  INFO 135804 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-10-17 20:55:55.159  WARN 135804 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2022-10-17 20:55:55.231  INFO 135804 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-10-17 20:55:55.297  INFO 135804 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-10-17 20:55:55.508  INFO 135804 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2022-10-17 20:55:55.508  INFO 135804 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2022-10-17 20:55:55.666  INFO 135804 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2022-10-17 20:55:55.666  INFO 135804 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2022-10-17 20:55:55.870  INFO 135804 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-10-17 20:55:56.017  INFO 135804 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-10-17 20:55:56.017  INFO 135804 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-10-17 20:55:56.017  INFO 135804 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-10-17 20:55:56.017  INFO 135804 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-10-17 20:55:56.017  INFO 135804 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-10-17 20:55:56.017  INFO 135804 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-10-17 20:55:56.017  INFO 135804 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-10-17 20:55:56.480  INFO 135804 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-10-17 20:55:56.484  INFO 135804 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-10-17 20:55:56.489  INFO 135804 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-10-17 20:55:56.496  INFO 135804 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1666020356493 with initial instances count: 0
+2022-10-17 20:55:56.501  INFO 135804 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CUSTOMER-SERVICE with eureka with status UP
+2022-10-17 20:55:56.503  INFO 135804 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1666020356503, current=UP, previous=STARTING]
+2022-10-17 20:55:56.507  INFO 135804 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOMER-SERVICE/DESKTOP-29U9NHN:customer-service:9002: registering service...
+2022-10-17 20:55:56.744  INFO 135804 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9002 (http) with context path ''
+2022-10-17 20:55:56.746  INFO 135804 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9002
+2022-10-17 20:55:56.944  INFO 135804 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOMER-SERVICE/DESKTOP-29U9NHN:customer-service:9002 - registration status: 204
+2022-10-17 20:55:57.277  INFO 135804 --- [main] com.aruntech.CustomerServiceApplication  : Started CustomerServiceApplication in 100.928 seconds (JVM running for 102.916)
+2022-10-17 21:08:17.871  INFO 139072 --- [main] com.aruntech.LoanServiceApplication      : No active profile set, falling back to default profiles: default
+2022-10-17 21:08:19.016  INFO 139072 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-17 21:08:19.319  INFO 139072 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 280ms. Found 2 JPA repository interfaces.
+2022-10-17 21:08:19.857  INFO 139072 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8b208004-9dd1-3fde-a656-c22b615cec1a
+2022-10-17 21:08:20.193  INFO 139072 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.aruntech.service.CustomerConsumer' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-17 21:08:21.655  INFO 139072 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9003 (http)
+2022-10-17 21:08:21.688  INFO 139072 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-17 21:08:21.689  INFO 139072 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-10-17 21:08:23.127  INFO 139072 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-17 21:08:23.128  INFO 139072 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5214 ms
+2022-10-17 21:08:24.090  INFO 139072 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-17 21:08:24.359  INFO 139072 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2022-10-17 21:08:24.835  INFO 139072 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2022-10-17 21:08:25.189  INFO 139072 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-17 21:08:26.331  INFO 139072 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-17 21:08:26.374  INFO 139072 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2022-10-17 21:09:48.186  INFO 139072 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-17 21:09:48.197  INFO 139072 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-17 21:09:48.775  WARN 139072 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-17 21:09:49.020  WARN 139072 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-10-17 21:09:49.021  INFO 139072 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-10-17 21:09:49.032  WARN 139072 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-10-17 21:09:49.033  INFO 139072 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-10-17 21:09:49.205  INFO 139072 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-10-17 21:09:50.060  WARN 139072 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2022-10-17 21:09:50.124  INFO 139072 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-10-17 21:09:50.164  INFO 139072 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-10-17 21:09:50.446  INFO 139072 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2022-10-17 21:09:50.447  INFO 139072 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2022-10-17 21:09:50.831  INFO 139072 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2022-10-17 21:09:50.831  INFO 139072 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2022-10-17 21:09:51.245  INFO 139072 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-10-17 21:09:51.471  INFO 139072 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-10-17 21:09:51.471  INFO 139072 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-10-17 21:09:51.471  INFO 139072 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-10-17 21:09:51.471  INFO 139072 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-10-17 21:09:51.471  INFO 139072 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-10-17 21:09:51.471  INFO 139072 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-10-17 21:09:51.471  INFO 139072 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-10-17 21:09:51.801  INFO 139072 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-10-17 21:09:51.807  INFO 139072 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-10-17 21:09:51.813  INFO 139072 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-10-17 21:09:51.821  INFO 139072 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1666021191818 with initial instances count: 1
+2022-10-17 21:09:51.824  INFO 139072 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application LOAN-SERVICE with eureka with status UP
+2022-10-17 21:09:51.826  INFO 139072 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1666021191825, current=UP, previous=STARTING]
+2022-10-17 21:09:51.829  INFO 139072 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_LOAN-SERVICE/DESKTOP-29U9NHN:loan-service:9003: registering service...
+2022-10-17 21:09:51.914  INFO 139072 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_LOAN-SERVICE/DESKTOP-29U9NHN:loan-service:9003 - registration status: 204
+2022-10-17 21:09:51.933  INFO 139072 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9003 (http) with context path ''
+2022-10-17 21:09:51.934  INFO 139072 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9003
+2022-10-17 21:09:52.407  INFO 139072 --- [main] com.aruntech.LoanServiceApplication      : Started LoanServiceApplication in 97.315 seconds (JVM running for 99.503)
+2022-10-17 21:10:10.716  INFO 137896 --- [main] com.aruntech.BankingServiceApplication   : No active profile set, falling back to default profiles: default
+2022-10-17 21:10:12.498  INFO 137896 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-17 21:10:12.961  INFO 137896 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 442ms. Found 1 JPA repository interfaces.
+2022-10-17 21:10:13.628  INFO 137896 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=80dd6248-cc7b-3c34-ada9-ec0eeb26d0ae
+2022-10-17 21:10:13.997  INFO 137896 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.aruntech.service.CustomerConsumer' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-17 21:10:14.000  INFO 137896 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.aruntech.service.LoanConsumer' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-17 21:10:15.151  INFO 137896 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9001 (http)
+2022-10-17 21:10:15.177  INFO 137896 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-17 21:10:15.177  INFO 137896 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-10-17 21:10:16.446  INFO 137896 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-17 21:10:16.446  INFO 137896 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5681 ms
+2022-10-17 21:10:17.132  INFO 137896 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-17 21:10:17.337  INFO 137896 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2022-10-17 21:10:17.695  INFO 137896 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2022-10-17 21:10:17.998  INFO 137896 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-17 21:10:19.063  INFO 137896 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-17 21:10:19.090  INFO 137896 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2022-10-17 21:10:56.067  INFO 135804 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-10-17 21:11:45.092  INFO 137896 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-17 21:11:45.102  INFO 137896 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-17 21:11:45.648  WARN 137896 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-17 21:11:45.849  WARN 137896 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-10-17 21:11:45.849  INFO 137896 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-10-17 21:11:45.858  WARN 137896 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-10-17 21:11:45.858  INFO 137896 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-10-17 21:11:46.074  INFO 137896 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-10-17 21:11:47.109  WARN 137896 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2022-10-17 21:11:47.197  INFO 137896 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-10-17 21:11:47.258  INFO 137896 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-10-17 21:11:47.497  INFO 137896 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2022-10-17 21:11:47.497  INFO 137896 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2022-10-17 21:11:47.723  INFO 137896 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2022-10-17 21:11:47.723  INFO 137896 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2022-10-17 21:11:48.000  INFO 137896 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-10-17 21:11:48.247  INFO 137896 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-10-17 21:11:48.247  INFO 137896 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-10-17 21:11:48.247  INFO 137896 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-10-17 21:11:48.248  INFO 137896 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-10-17 21:11:48.248  INFO 137896 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-10-17 21:11:48.248  INFO 137896 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-10-17 21:11:48.248  INFO 137896 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-10-17 21:11:48.496  INFO 137896 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-10-17 21:11:48.499  INFO 137896 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-10-17 21:11:48.501  INFO 137896 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-10-17 21:11:48.506  INFO 137896 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1666021308503 with initial instances count: 2
+2022-10-17 21:11:48.508  INFO 137896 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BANKING-SERVICE with eureka with status UP
+2022-10-17 21:11:48.510  INFO 137896 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1666021308510, current=UP, previous=STARTING]
+2022-10-17 21:11:48.514  INFO 137896 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BANKING-SERVICE/DESKTOP-29U9NHN:banking-service:9001: registering service...
+2022-10-17 21:11:48.602  INFO 137896 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BANKING-SERVICE/DESKTOP-29U9NHN:banking-service:9001 - registration status: 204
+2022-10-17 21:11:48.607  INFO 137896 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9001 (http) with context path ''
+2022-10-17 21:11:48.609  INFO 137896 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9001
+2022-10-17 21:11:48.940  INFO 137896 --- [main] com.aruntech.BankingServiceApplication   : Started BankingServiceApplication in 101.733 seconds (JVM running for 104.392)
+2022-10-17 21:14:51.487  INFO 139072 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-10-17 21:15:02.091  INFO 137896 --- [http-nio-9001-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-17 21:15:02.094  INFO 137896 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-17 21:15:02.188  INFO 137896 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 93 ms
+2022-10-17 21:15:02.398  INFO 137896 --- [http-nio-9001-exec-1] com.aruntech.service.BankingService      : banking-service: Creating the new bank account
+2022-10-17 21:15:02.399  INFO 137896 --- [http-nio-9001-exec-1] com.aruntech.service.BankingService      : banking-service: Payload for creating the new customer: CreateCustomerRequest{name='Arun', balance=2000.0, phone='xxxxxxxxxx', emailId='xxxx@gmail.com'}
+2022-10-17 21:15:02.399  INFO 137896 --- [http-nio-9001-exec-1] com.aruntech.service.BankingService      : banking-service: Making call to customer-service to create the customer
+2022-10-17 21:15:02.823  INFO 137896 --- [http-nio-9001-exec-1] c.netflix.config.ChainedDynamicProperty  : Flipping property: customer-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2022-10-17 21:15:02.895  INFO 137896 --- [http-nio-9001-exec-1] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook installed for: NFLoadBalancer-PingTimer-customer-service
+2022-10-17 21:15:02.896  INFO 137896 --- [http-nio-9001-exec-1] c.netflix.loadbalancer.BaseLoadBalancer  : Client: customer-service instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=customer-service,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2022-10-17 21:15:02.914  INFO 137896 --- [http-nio-9001-exec-1] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
+2022-10-17 21:15:02.992  INFO 137896 --- [http-nio-9001-exec-1] c.netflix.config.ChainedDynamicProperty  : Flipping property: customer-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2022-10-17 21:15:02.998  INFO 137896 --- [http-nio-9001-exec-1] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client customer-service initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=customer-service,current list of Servers=[DESKTOP-29U9NHN:9002],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:DESKTOP-29U9NHN:9002;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 05:30:00 IST 1970;	First connection made: Thu Jan 01 05:30:00 IST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@701bc18f
+2022-10-17 21:15:03.915  INFO 135804 --- [http-nio-9002-exec-10] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-17 21:15:03.918  INFO 135804 --- [http-nio-9002-exec-10] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-17 21:15:03.929  INFO 137896 --- [PollingServerListUpdater-0] c.netflix.config.ChainedDynamicProperty  : Flipping property: customer-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2022-10-17 21:15:04.172  INFO 135804 --- [http-nio-9002-exec-10] o.s.web.servlet.DispatcherServlet        : Completed initialization in 253 ms
+2022-10-17 21:15:04.623  INFO 135804 --- [http-nio-9002-exec-10] com.aruntech.service.CustomerService     : customer-service: Create the new customer
+2022-10-17 21:15:05.540  INFO 135804 --- [http-nio-9002-exec-10] com.aruntech.service.CustomerService     : customer-service: New customer Customer{id=1, name='Arun', accountNo=54622116, balance=2000.0, phone='xxxxxxxxxx', emailId='xxxx@gmail.com'} was created successfully
+2022-10-17 21:15:08.772  INFO 137896 --- [http-nio-9001-exec-3] com.aruntech.service.BankingService      : banking-service: Creating the new bank account
+2022-10-17 21:15:08.772  INFO 137896 --- [http-nio-9001-exec-3] com.aruntech.service.BankingService      : banking-service: Payload for creating the new customer: CreateCustomerRequest{name='Arun', balance=2000.0, phone='xxxxxxxxxx', emailId='xxxx@gmail.com'}
+2022-10-17 21:15:08.773  INFO 137896 --- [http-nio-9001-exec-3] com.aruntech.service.BankingService      : banking-service: Making call to customer-service to create the customer
+2022-10-17 21:15:08.784  INFO 135804 --- [http-nio-9002-exec-7] com.aruntech.service.CustomerService     : customer-service: Create the new customer
+2022-10-17 21:15:08.794  INFO 135804 --- [http-nio-9002-exec-7] com.aruntech.service.CustomerService     : customer-service: New customer Customer{id=2, name='Arun', accountNo=75375528, balance=2000.0, phone='xxxxxxxxxx', emailId='xxxx@gmail.com'} was created successfully
+2022-10-17 21:15:08.836  INFO 137896 --- [http-nio-9001-exec-3] com.aruntech.service.BankingService      : banking-service: Response from customer-service for the new customer: Customer{id=2, name='Arun', accountNo=75375528, balance=2000.0, phone='xxxxxxxxxx', emailId='xxxx@gmail.com', loanDetails=[]}
+2022-10-17 21:15:09.126  INFO 137896 --- [http-nio-9001-exec-3] com.aruntech.service.BankingService      : banking-service: Account was created with response: AccountCreateResponse{status='success', message='Successfully created the bank account', customerId='2', accountNo='75375528'}
+2022-10-17 21:15:33.725  INFO 137896 --- [http-nio-9001-exec-4] com.aruntech.service.BankingService      : banking-service: Deposit the amount with payload TransactionRequest{customerId='2', accountNo='0', amount=1500.0}
+2022-10-17 21:15:33.754  INFO 135804 --- [http-nio-9002-exec-6] com.aruntech.service.CustomerService     : customer-service: Fetch the customer with id 2
+2022-10-17 21:15:33.996  INFO 135804 --- [http-nio-9002-exec-6] com.aruntech.service.CustomerService     : customer-service: Retrieved the customer with details Customer{id=2, name='Arun', accountNo=75375528, balance=2000.0, phone='xxxxxxxxxx', emailId='xxxx@gmail.com'}
+2022-10-17 21:15:34.002  INFO 137896 --- [http-nio-9001-exec-4] com.aruntech.service.BankingService      : banking-service: Calling customer-service with payload: UpdateBalanceRequest{id=2, accountNo=75375528, amount=3500.0}
+2022-10-17 21:15:34.018  INFO 135804 --- [http-nio-9002-exec-3] com.aruntech.service.CustomerService     : customer-service: Update the customer details with id 2
+2022-10-17 21:15:34.061  INFO 135804 --- [http-nio-9002-exec-3] com.aruntech.service.CustomerService     : customer-service: The updated customer details are Customer{id=2, name='Arun', accountNo=75375528, balance=3500.0, phone='xxxxxxxxxx', emailId='xxxx@gmail.com'}
+2022-10-17 21:15:34.070  INFO 135804 --- [http-nio-9002-exec-2] com.aruntech.service.CustomerService     : customer-service: Fetch the customer with id 2
+2022-10-17 21:15:34.073  INFO 135804 --- [http-nio-9002-exec-2] com.aruntech.service.CustomerService     : customer-service: Retrieved the customer with details Customer{id=2, name='Arun', accountNo=75375528, balance=3500.0, phone='xxxxxxxxxx', emailId='xxxx@gmail.com'}
+2022-10-17 21:15:34.076  INFO 137896 --- [http-nio-9001-exec-4] com.aruntech.service.BankingService      : banking-service: Updated customer details from customer-service: Customer{id=2, name='Arun', accountNo=75375528, balance=3500.0, phone='xxxxxxxxxx', emailId='xxxx@gmail.com', loanDetails=[]}
+2022-10-17 21:15:34.086  INFO 137896 --- [http-nio-9001-exec-4] com.aruntech.service.BankingService      : banking-service: Balance was updated successfully with details TransactionResponse{status='success', message='Successfully updated the balance', balance=3500.0}
+2022-10-17 21:15:56.087  INFO 135804 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-10-17 21:15:59.476  INFO 135804 --- [http-nio-9002-exec-1] com.aruntech.service.CustomerService     : customer-service: Fetch the customer with id 2
+2022-10-17 21:15:59.481  INFO 135804 --- [http-nio-9002-exec-1] com.aruntech.service.CustomerService     : customer-service: Retrieved the customer with details Customer{id=2, name='Arun', accountNo=75375528, balance=3500.0, phone='xxxxxxxxxx', emailId='xxxx@gmail.com'}
+2022-10-17 21:15:59.483  INFO 137896 --- [http-nio-9001-exec-6] com.aruntech.service.BankingService      : banking-service: Calling customer-service with payload: UpdateBalanceRequest{id=2, accountNo=75375528, amount=2500.0}
+2022-10-17 21:15:59.491  INFO 135804 --- [http-nio-9002-exec-4] com.aruntech.service.CustomerService     : customer-service: Update the customer details with id 2
+2022-10-17 21:15:59.498  INFO 135804 --- [http-nio-9002-exec-4] com.aruntech.service.CustomerService     : customer-service: The updated customer details are Customer{id=2, name='Arun', accountNo=75375528, balance=2500.0, phone='xxxxxxxxxx', emailId='xxxx@gmail.com'}
+2022-10-17 21:15:59.504  INFO 135804 --- [http-nio-9002-exec-9] com.aruntech.service.CustomerService     : customer-service: Fetch the customer with id 2
+2022-10-17 21:15:59.508  INFO 135804 --- [http-nio-9002-exec-9] com.aruntech.service.CustomerService     : customer-service: Retrieved the customer with details Customer{id=2, name='Arun', accountNo=75375528, balance=2500.0, phone='xxxxxxxxxx', emailId='xxxx@gmail.com'}
+2022-10-17 21:15:59.511  INFO 137896 --- [http-nio-9001-exec-6] com.aruntech.service.BankingService      : banking-service: Updated customer details from customer-service: Customer{id=2, name='Arun', accountNo=75375528, balance=2500.0, phone='xxxxxxxxxx', emailId='xxxx@gmail.com', loanDetails=[]}
+2022-10-17 21:15:59.517  INFO 137896 --- [http-nio-9001-exec-6] com.aruntech.service.BankingService      : banking-service: Balance was updated successfully with details TransactionResponse{status='success', message='Successfully updated the balance', balance=2500.0}
+2022-10-17 21:16:25.755  INFO 137896 --- [http-nio-9001-exec-5] com.aruntech.service.BankingService      : banking-service: Apply for new loan with details LoanRequest{name='Arun', age=39, custId=2, accountNo=75375528, income=10000.0, employmentType=mnc, amount=10000.0, tenture=24}
+2022-10-17 21:16:25.868  INFO 137896 --- [http-nio-9001-exec-5] c.netflix.config.ChainedDynamicProperty  : Flipping property: loan-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2022-10-17 21:16:25.871  INFO 137896 --- [http-nio-9001-exec-5] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook installed for: NFLoadBalancer-PingTimer-loan-service
+2022-10-17 21:16:25.872  INFO 137896 --- [http-nio-9001-exec-5] c.netflix.loadbalancer.BaseLoadBalancer  : Client: loan-service instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=loan-service,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2022-10-17 21:16:25.876  INFO 137896 --- [http-nio-9001-exec-5] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
+2022-10-17 21:16:25.878  INFO 137896 --- [http-nio-9001-exec-5] c.netflix.config.ChainedDynamicProperty  : Flipping property: loan-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2022-10-17 21:16:25.880  INFO 137896 --- [http-nio-9001-exec-5] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client loan-service initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=loan-service,current list of Servers=[DESKTOP-29U9NHN:9003],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:DESKTOP-29U9NHN:9003;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 05:30:00 IST 1970;	First connection made: Thu Jan 01 05:30:00 IST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@6fb06cbf
+2022-10-17 21:16:26.425  INFO 139072 --- [http-nio-9003-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-17 21:16:26.426  INFO 139072 --- [http-nio-9003-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-17 21:16:26.632  INFO 139072 --- [http-nio-9003-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 206 ms
+2022-10-17 21:16:26.880  INFO 137896 --- [PollingServerListUpdater-0] c.netflix.config.ChainedDynamicProperty  : Flipping property: loan-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2022-10-17 21:16:26.931 ERROR 137896 --- [http-nio-9001-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is feign.RetryableException: Read timed out executing POST http://loan-service/loan] with root cause
+
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.8.0_301]
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116) ~[na:1.8.0_301]
+	at java.net.SocketInputStream.read(SocketInputStream.java:171) ~[na:1.8.0_301]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_301]
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246) ~[na:1.8.0_301]
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:286) ~[na:1.8.0_301]
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345) ~[na:1.8.0_301]
+	at sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:735) ~[na:1.8.0_301]
+	at sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:678) ~[na:1.8.0_301]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1593) ~[na:1.8.0_301]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498) ~[na:1.8.0_301]
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480) ~[na:1.8.0_301]
+	at feign.Client$Default.convertResponse(Client.java:78) ~[feign-core-10.7.4.jar:na]
+	at feign.Client$Default.execute(Client.java:74) ~[feign-core-10.7.4.jar:na]
+	at org.springframework.cloud.openfeign.ribbon.FeignLoadBalancer.execute(FeignLoadBalancer.java:93) ~[spring-cloud-openfeign-core-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at org.springframework.cloud.openfeign.ribbon.FeignLoadBalancer.execute(FeignLoadBalancer.java:56) ~[spring-cloud-openfeign-core-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at com.netflix.client.AbstractLoadBalancerAwareClient$1.call(AbstractLoadBalancerAwareClient.java:104) ~[ribbon-loadbalancer-2.3.0.jar:2.3.0]
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$3$1.call(LoadBalancerCommand.java:303) ~[ribbon-loadbalancer-2.3.0.jar:2.3.0]
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$3$1.call(LoadBalancerCommand.java:287) ~[ribbon-loadbalancer-2.3.0.jar:2.3.0]
+	at rx.internal.util.ScalarSynchronousObservable$3.call(ScalarSynchronousObservable.java:231) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.util.ScalarSynchronousObservable$3.call(ScalarSynchronousObservable.java:228) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.unsafeSubscribe(Observable.java:10327) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeConcatMap$ConcatMapSubscriber.drain(OnSubscribeConcatMap.java:286) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeConcatMap$ConcatMapSubscriber.onNext(OnSubscribeConcatMap.java:144) ~[rxjava-1.3.8.jar:1.3.8]
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:185) ~[ribbon-loadbalancer-2.3.0.jar:2.3.0]
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:180) ~[ribbon-loadbalancer-2.3.0.jar:2.3.0]
+	at rx.Observable.unsafeSubscribe(Observable.java:10327) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:94) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:42) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.unsafeSubscribe(Observable.java:10327) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber$1.call(OperatorRetryWithPredicate.java:127) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.enqueue(TrampolineScheduler.java:73) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.schedule(TrampolineScheduler.java:52) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:79) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:45) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.util.ScalarSynchronousObservable$WeakSingleProducer.request(ScalarSynchronousObservable.java:276) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Subscriber.setProducer(Subscriber.java:209) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:138) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:129) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.subscribe(Observable.java:10423) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.Observable.subscribe(Observable.java:10390) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.observables.BlockingObservable.blockForSingle(BlockingObservable.java:443) ~[rxjava-1.3.8.jar:1.3.8]
+	at rx.observables.BlockingObservable.single(BlockingObservable.java:340) ~[rxjava-1.3.8.jar:1.3.8]
+	at com.netflix.client.AbstractLoadBalancerAwareClient.executeWithLoadBalancer(AbstractLoadBalancerAwareClient.java:112) ~[ribbon-loadbalancer-2.3.0.jar:2.3.0]
+	at org.springframework.cloud.openfeign.ribbon.LoadBalancerFeignClient.execute(LoadBalancerFeignClient.java:83) ~[spring-cloud-openfeign-core-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:110) ~[feign-core-10.7.4.jar:na]
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:80) ~[feign-core-10.7.4.jar:na]
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:100) ~[feign-core-10.7.4.jar:na]
+	at com.sun.proxy.$Proxy117.applyLoan(Unknown Source) ~[na:na]
+	at com.aruntech.service.BankingService.applyLoan(BankingService.java:163) ~[classes/:na]
+	at com.aruntech.controller.BankController.applyLoan(BankController.java:54) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_301]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_301]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_301]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_301]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_301]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_301]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_301]
+
+2022-10-17 21:16:26.952  INFO 139072 --- [http-nio-9003-exec-1] com.aruntech.service.LoanService         : loan-service: Apply for the new loan with details LoanRequest{name='Arun', age=39, custId=2, accountNo=75375528, income=10000.0, employmentType=mnc, amount=10000.0, tenture=24}
+2022-10-17 21:16:27.509  INFO 139072 --- [http-nio-9003-exec-1] c.netflix.config.ChainedDynamicProperty  : Flipping property: customer-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2022-10-17 21:16:27.645  INFO 139072 --- [http-nio-9003-exec-1] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook installed for: NFLoadBalancer-PingTimer-customer-service
+2022-10-17 21:16:27.647  INFO 139072 --- [http-nio-9003-exec-1] c.netflix.loadbalancer.BaseLoadBalancer  : Client: customer-service instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=customer-service,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2022-10-17 21:16:27.671  INFO 139072 --- [http-nio-9003-exec-1] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
+2022-10-17 21:16:28.177  INFO 139072 --- [http-nio-9003-exec-1] c.netflix.config.ChainedDynamicProperty  : Flipping property: customer-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2022-10-17 21:16:28.185  INFO 139072 --- [http-nio-9003-exec-1] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client customer-service initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=customer-service,current list of Servers=[DESKTOP-29U9NHN:9002],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:DESKTOP-29U9NHN:9002;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 05:30:00 IST 1970;	First connection made: Thu Jan 01 05:30:00 IST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@30544e42
+2022-10-17 21:16:28.363  INFO 135804 --- [http-nio-9002-exec-8] com.aruntech.service.CustomerService     : customer-service: Fetch the customer with id 2
+2022-10-17 21:16:28.367  INFO 135804 --- [http-nio-9002-exec-8] com.aruntech.service.CustomerService     : customer-service: Retrieved the customer with details Customer{id=2, name='Arun', accountNo=75375528, balance=2500.0, phone='xxxxxxxxxx', emailId='xxxx@gmail.com'}
+2022-10-17 21:16:28.688  INFO 139072 --- [PollingServerListUpdater-0] c.netflix.config.ChainedDynamicProperty  : Flipping property: customer-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2022-10-17 21:16:28.944 ERROR 139072 --- [http-nio-9003-exec-1] com.aruntech.service.LoanService         : loan-service: The requested loan request was rejected
+2022-10-17 21:16:32.134  INFO 137896 --- [http-nio-9001-exec-9] com.aruntech.service.BankingService      : banking-service: Apply for new loan with details LoanRequest{name='Arun', age=39, custId=2, accountNo=75375528, income=10000.0, employmentType=mnc, amount=10000.0, tenture=24}
+2022-10-17 21:16:32.142  INFO 139072 --- [http-nio-9003-exec-4] com.aruntech.service.LoanService         : loan-service: Apply for the new loan with details LoanRequest{name='Arun', age=39, custId=2, accountNo=75375528, income=10000.0, employmentType=mnc, amount=10000.0, tenture=24}
+2022-10-17 21:16:32.148  INFO 135804 --- [http-nio-9002-exec-5] com.aruntech.service.CustomerService     : customer-service: Fetch the customer with id 2
+2022-10-17 21:16:32.153  INFO 135804 --- [http-nio-9002-exec-5] com.aruntech.service.CustomerService     : customer-service: Retrieved the customer with details Customer{id=2, name='Arun', accountNo=75375528, balance=2500.0, phone='xxxxxxxxxx', emailId='xxxx@gmail.com'}
+2022-10-17 21:16:32.167 ERROR 139072 --- [http-nio-9003-exec-4] com.aruntech.service.LoanService         : loan-service: The requested loan request was rejected
+2022-10-17 21:16:32.176  INFO 137896 --- [http-nio-9001-exec-9] com.aruntech.service.BankingService      : banking-service: response from loan-service is LoanStatus{id=0, status='REJECTED', message='You are not eligible for loan', amount=0.0, tenture=0}
+2022-10-17 21:16:48.263  INFO 137896 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-10-17 21:16:53.951  INFO 137896 --- [http-nio-9001-exec-8] com.aruntech.service.BankingService      : banking-service: Apply for new loan with details LoanRequest{name='Arun', age=39, custId=2, accountNo=75375528, income=35000.0, employmentType=govt, amount=200000.0, tenture=36}
+2022-10-17 21:16:53.975  INFO 139072 --- [http-nio-9003-exec-5] com.aruntech.service.LoanService         : loan-service: Apply for the new loan with details LoanRequest{name='Arun', age=39, custId=2, accountNo=75375528, income=35000.0, employmentType=govt, amount=200000.0, tenture=36}
+2022-10-17 21:16:53.980  INFO 135804 --- [http-nio-9002-exec-10] com.aruntech.service.CustomerService     : customer-service: Fetch the customer with id 2
+2022-10-17 21:16:53.985  INFO 135804 --- [http-nio-9002-exec-10] com.aruntech.service.CustomerService     : customer-service: Retrieved the customer with details Customer{id=2, name='Arun', accountNo=75375528, balance=2500.0, phone='xxxxxxxxxx', emailId='xxxx@gmail.com'}
+2022-10-17 21:16:54.042  INFO 139072 --- [http-nio-9003-exec-5] com.aruntech.service.LoanService         : loan-service: The new loan Loan{id=8, amount=200000.0, tenture=36, customerId=2, accountNo=75375528} was added
+2022-10-17 21:16:54.049  INFO 139072 --- [http-nio-9003-exec-5] com.aruntech.service.LoanService         : loan-service: New loan was created with details LoanStatus{id=8, status='ACCEPTED', message='You are eligible for the loan', amount=200000.0, tenture=36}
+2022-10-17 21:16:54.052  INFO 137896 --- [http-nio-9001-exec-8] com.aruntech.service.BankingService      : banking-service: response from loan-service is LoanStatus{id=8, status='ACCEPTED', message='You are eligible for the loan', amount=200000.0, tenture=36}
+2022-10-17 21:17:07.627  INFO 137896 --- [http-nio-9001-exec-10] com.aruntech.service.BankingService      : banking-service: Fetch the customer details with id 2
+2022-10-17 21:17:07.640  INFO 135804 --- [http-nio-9002-exec-7] com.aruntech.service.CustomerService     : customer-service: Fetch the customer with id 2
+2022-10-17 21:17:07.648  INFO 135804 --- [http-nio-9002-exec-7] com.aruntech.service.CustomerService     : customer-service: Retrieved the customer with details Customer{id=2, name='Arun', accountNo=75375528, balance=2500.0, phone='xxxxxxxxxx', emailId='xxxx@gmail.com'}
+2022-10-17 21:17:07.666  INFO 139072 --- [http-nio-9003-exec-8] com.aruntech.service.LoanService         : loan-service: Get all loans for the customer id 2
+2022-10-17 21:17:08.282  INFO 139072 --- [http-nio-9003-exec-8] com.aruntech.service.LoanService         : loan-service: Retrieved loan with details [Loan{id=8, amount=200000.0, tenture=36, customerId=2, accountNo=75375528}]
+2022-10-17 21:17:08.303  INFO 137896 --- [http-nio-9001-exec-10] com.aruntech.service.BankingService      : banking-service: Fetch the customer details Customer{id=2, name='Arun', accountNo=75375528, balance=2500.0, phone='xxxxxxxxxx', emailId='xxxx@gmail.com', loanDetails=[Loan{id=8, amount=200000.0, tenture=36, customerId=2, accountNo=75375528}]}
+2022-10-17 21:17:22.118  INFO 137896 --- [http-nio-9001-exec-2] com.aruntech.service.BankingService      : banking-service: Check the balance of the customer id 2
+2022-10-17 21:17:22.124  INFO 135804 --- [http-nio-9002-exec-6] com.aruntech.service.CustomerService     : customer-service: Fetch the customer with id 2
+2022-10-17 21:17:22.129  INFO 135804 --- [http-nio-9002-exec-6] com.aruntech.service.CustomerService     : customer-service: Retrieved the customer with details Customer{id=2, name='Arun', accountNo=75375528, balance=2500.0, phone='xxxxxxxxxx', emailId='xxxx@gmail.com'}
+2022-10-17 21:18:48.970  INFO 135804 --- [http-nio-9002-exec-1] com.aruntech.service.CustomerService     : customer-service: Fetch all customers
+2022-10-17 21:18:49.531  INFO 135804 --- [http-nio-9002-exec-1] com.aruntech.service.CustomerService     : customer-service: All customers details: [Customer{id=1, name='Arun', accountNo=54622116, balance=2000.0, phone='xxxxxxxxxx', emailId='xxxx@gmail.com'}, Customer{id=2, name='Arun', accountNo=75375528, balance=2500.0, phone='xxxxxxxxxx', emailId='xxxx@gmail.com'}]
+2022-10-17 21:18:56.515  INFO 135804 --- [http-nio-9002-exec-4] com.aruntech.service.CustomerService     : customer-service: Fetch the customer with id 1
+2022-10-17 21:18:56.519  INFO 135804 --- [http-nio-9002-exec-4] com.aruntech.service.CustomerService     : customer-service: Retrieved the customer with details Customer{id=1, name='Arun', accountNo=54622116, balance=2000.0, phone='xxxxxxxxxx', emailId='xxxx@gmail.com'}
+2022-10-17 21:19:03.750  INFO 135804 --- [http-nio-9002-exec-9] com.aruntech.service.CustomerService     : customer-service: Create the new customer
+2022-10-17 21:19:03.758  INFO 135804 --- [http-nio-9002-exec-9] com.aruntech.service.CustomerService     : customer-service: New customer Customer{id=10, name='Andrino', accountNo=62452419, balance=2000.0, phone='xxxxxxxxxx', emailId='xxxx@gmail.com'} was created successfully
+2022-10-17 21:19:30.224  INFO 135804 --- [http-nio-9002-exec-8] com.aruntech.service.CustomerService     : customer-service: Update the customer details with id 2
+2022-10-17 21:19:30.233  INFO 135804 --- [http-nio-9002-exec-8] com.aruntech.service.CustomerService     : customer-service: The updated customer details are Customer{id=2, name='Arun', accountNo=75375528, balance=2500.0, phone='xxxxxxxxxx', emailId='xxxx@gmail.com'}
+2022-10-17 21:19:44.978  INFO 135804 --- [http-nio-9002-exec-5] com.aruntech.service.CustomerService     : customer-service: Delete the customer with id 2
+2022-10-17 21:19:45.035  INFO 135804 --- [http-nio-9002-exec-5] com.aruntech.service.CustomerService     : customer-service: The customer Customer{id=2, name='Arun', accountNo=75375528, balance=2500.0, phone='xxxxxxxxxx', emailId='xxxx@gmail.com'} was removed successfully
+2022-10-17 21:19:51.530  INFO 139072 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-10-17 21:20:03.416  INFO 139072 --- [http-nio-9003-exec-9] com.aruntech.service.LoanService         : loan-service: Fetch all loans
+2022-10-17 21:20:03.451  INFO 139072 --- [http-nio-9003-exec-9] com.aruntech.service.LoanService         : loan-service: All loans with details: [Loan{id=8, amount=200000.0, tenture=36, customerId=2, accountNo=75375528}]
+2022-10-17 21:20:12.989  INFO 139072 --- [http-nio-9003-exec-3] com.aruntech.service.LoanService         : loan-service: Fetch the loan with id 8
+2022-10-17 21:20:13.069  INFO 139072 --- [http-nio-9003-exec-3] com.aruntech.service.LoanService         : loan-service: Retrieved the loan with details Loan{id=8, amount=200000.0, tenture=36, customerId=2, accountNo=75375528}
+2022-10-17 21:20:56.095  INFO 135804 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-10-17 21:20:57.347  INFO 139072 --- [http-nio-9003-exec-6] com.aruntech.service.LoanService         : loan-service: Apply for the new loan with details LoanRequest{name='Arun', age=39, custId=2, accountNo=75375528, income=50000.0, employmentType=govt, amount=500000.0, tenture=60}
+2022-10-17 21:20:57.357  INFO 135804 --- [http-nio-9002-exec-7] com.aruntech.service.CustomerService     : customer-service: Fetch the customer with id 2
+2022-10-17 21:20:57.403 ERROR 135804 --- [http-nio-9002-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.util.NoSuchElementException: No value present] with root cause
+
+java.util.NoSuchElementException: No value present
+	at java.util.Optional.get(Optional.java:135) ~[na:1.8.0_301]
+	at com.aruntech.service.CustomerService.getCustomerById(CustomerService.java:29) ~[classes/:na]
+	at com.aruntech.controller.CustomerController.getCustomer(CustomerController.java:24) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_301]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_301]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_301]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_301]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_301]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_301]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_301]
+
+2022-10-17 21:20:57.534 ERROR 139072 --- [http-nio-9003-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is feign.FeignException$InternalServerError: [500] during [GET] to [http://customer-service/customer/2] [CustomerConsumer#getCustomer(long)]: [{"timestamp":"2022-10-17T15:50:57.455+0000","status":500,"error":"Internal Server Error","message":"No value present","path":"/customer/2"}]] with root cause
+
+feign.FeignException$InternalServerError: [500] during [GET] to [http://customer-service/customer/2] [CustomerConsumer#getCustomer(long)]: [{"timestamp":"2022-10-17T15:50:57.455+0000","status":500,"error":"Internal Server Error","message":"No value present","path":"/customer/2"}]
+	at feign.FeignException.serverErrorStatus(FeignException.java:231) ~[feign-core-10.7.4.jar:na]
+	at feign.FeignException.errorStatus(FeignException.java:180) ~[feign-core-10.7.4.jar:na]
+	at feign.FeignException.errorStatus(FeignException.java:169) ~[feign-core-10.7.4.jar:na]
+	at feign.codec.ErrorDecoder$Default.decode(ErrorDecoder.java:92) ~[feign-core-10.7.4.jar:na]
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:156) ~[feign-core-10.7.4.jar:na]
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:80) ~[feign-core-10.7.4.jar:na]
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:100) ~[feign-core-10.7.4.jar:na]
+	at com.sun.proxy.$Proxy117.getCustomer(Unknown Source) ~[na:na]
+	at com.aruntech.service.LoanService.checkCustomerDetails(LoanService.java:105) ~[classes/:na]
+	at com.aruntech.service.LoanService.applyLoan(LoanService.java:55) ~[classes/:na]
+	at com.aruntech.controller.LoanController.applyLoan(LoanController.java:35) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_301]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_301]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_301]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_301]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1639) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_301]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_301]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.31.jar:9.0.31]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_301]
+
+2022-10-17 21:21:31.112  INFO 139072 --- [http-nio-9003-exec-10] com.aruntech.service.LoanService         : loan-service: Apply for the new loan with details LoanRequest{name='Arun', age=39, custId=1, accountNo=54622116, income=50000.0, employmentType=govt, amount=500000.0, tenture=60}
+2022-10-17 21:21:31.121  INFO 135804 --- [http-nio-9002-exec-6] com.aruntech.service.CustomerService     : customer-service: Fetch the customer with id 1
+2022-10-17 21:21:31.128  INFO 135804 --- [http-nio-9002-exec-6] com.aruntech.service.CustomerService     : customer-service: Retrieved the customer with details Customer{id=1, name='Arun', accountNo=54622116, balance=2000.0, phone='xxxxxxxxxx', emailId='xxxx@gmail.com'}
+2022-10-17 21:21:31.143  INFO 139072 --- [http-nio-9003-exec-10] com.aruntech.service.LoanService         : loan-service: The new loan Loan{id=11, amount=500000.0, tenture=60, customerId=1, accountNo=54622116} was added
+2022-10-17 21:21:31.155  INFO 139072 --- [http-nio-9003-exec-10] com.aruntech.service.LoanService         : loan-service: New loan was created with details LoanStatus{id=11, status='ACCEPTED', message='You are eligible for the loan', amount=500000.0, tenture=60}
+2022-10-17 21:21:48.269  INFO 137896 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-10-17 21:21:51.053  INFO 139072 --- [http-nio-9003-exec-1] com.aruntech.service.LoanService         : loan-service: Apply for the new loan with details LoanRequest{name='Arun', age=39, custId=1, accountNo=54622116, income=10000.0, employmentType=govt, amount=200000.0, tenture=24}
+2022-10-17 21:21:51.059  INFO 135804 --- [http-nio-9002-exec-3] com.aruntech.service.CustomerService     : customer-service: Fetch the customer with id 1
+2022-10-17 21:21:51.064  INFO 135804 --- [http-nio-9002-exec-3] com.aruntech.service.CustomerService     : customer-service: Retrieved the customer with details Customer{id=1, name='Arun', accountNo=54622116, balance=2000.0, phone='xxxxxxxxxx', emailId='xxxx@gmail.com'}
+2022-10-17 21:21:51.078 ERROR 139072 --- [http-nio-9003-exec-1] com.aruntech.service.LoanService         : loan-service: The requested loan request was rejected
+2022-10-17 21:22:05.990  INFO 139072 --- [http-nio-9003-exec-4] com.aruntech.service.LoanService         : loan-service: Fetch all loans
+2022-10-17 21:22:05.999  INFO 139072 --- [http-nio-9003-exec-4] com.aruntech.service.LoanService         : loan-service: All loans with details: [Loan{id=8, amount=200000.0, tenture=36, customerId=2, accountNo=75375528}, Loan{id=11, amount=500000.0, tenture=60, customerId=1, accountNo=54622116}]
+2022-10-17 21:22:22.532  INFO 139072 --- [http-nio-9003-exec-5] com.aruntech.service.LoanService         : loan-service: Update the loan details with id 8
+2022-10-17 21:22:22.551  INFO 139072 --- [http-nio-9003-exec-5] com.aruntech.service.LoanService         : loan-service: The updated loan details are Loan{id=0, amount=350000.0, tenture=48, customerId=0, accountNo=0}
+2022-10-17 21:22:36.788  INFO 139072 --- [http-nio-9003-exec-8] com.aruntech.service.LoanService         : loan-service: Remove the loan of loan id 8
+2022-10-17 21:22:36.837  INFO 139072 --- [http-nio-9003-exec-8] com.aruntech.service.LoanService         : loan-service: Successfully remove the loan id 8
+2022-10-17 21:22:42.502  INFO 139072 --- [http-nio-9003-exec-2] com.aruntech.service.LoanService         : loan-service: Fetch all loan transactions
+2022-10-17 21:22:42.526  INFO 139072 --- [http-nio-9003-exec-2] com.aruntech.service.LoanService         : loan-service: Retrieved loan transaction details [LoanTransaction{loanId=6, status=REJECTED, message='You are not eligible for loan', amount=0.0, tenture=0, date=17-10-2022 21:16:28}, LoanTransaction{loanId=7, status=REJECTED, message='You are not eligible for loan', amount=0.0, tenture=0, date=17-10-2022 21:16:32}, LoanTransaction{loanId=9, status=ACCEPTED, message='You are eligible for the loan', amount=200000.0, tenture=36, date=17-10-2022 21:16:54}, LoanTransaction{loanId=12, status=ACCEPTED, message='You are eligible for the loan', amount=500000.0, tenture=60, date=17-10-2022 21:21:31}, LoanTransaction{loanId=13, status=REJECTED, message='You are not eligible for loan', amount=0.0, tenture=0, date=17-10-2022 21:21:51}, LoanTransaction{loanId=14, status=CLOSED, message='You have closed the loan', amount=0.0, tenture=0, date=17-10-2022 21:22:36}]2022-10-17 22:00:43.186 ERROR 135804 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}2022-10-17 22:04:32.646  INFO 138160 --- [main] com.aruntech.CustomerServiceApplication  : No active profile set, falling back to default profiles: default
+2022-10-17 22:04:33.804  INFO 138160 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-17 22:04:34.122  INFO 138160 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 291ms. Found 1 JPA repository interfaces.
+2022-10-17 22:04:34.539  INFO 138160 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=66598fdd-d1c2-3bff-90aa-9fcd6921e153
+2022-10-17 22:04:35.795  INFO 138160 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9002 (http)
+2022-10-17 22:04:35.826  INFO 138160 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-17 22:04:35.827  INFO 138160 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-10-17 22:04:37.507  INFO 138160 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-17 22:04:37.510  INFO 138160 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4818 ms
+2022-10-17 22:04:38.635  INFO 138160 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-17 22:04:39.028  INFO 138160 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2022-10-17 22:04:39.522  INFO 138160 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2022-10-17 22:04:39.953  INFO 138160 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-17 22:04:42.184  INFO 138160 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-17 22:04:42.244  INFO 138160 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2022-10-17 22:06:19.819  INFO 138160 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-17 22:06:19.835  INFO 138160 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-17 22:06:21.019  WARN 138160 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-10-17 22:06:21.019  INFO 138160 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-10-17 22:06:21.037  WARN 138160 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-10-17 22:06:21.038  INFO 138160 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-10-17 22:06:21.188  WARN 138160 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-17 22:06:21.605  INFO 138160 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-10-17 22:06:24.155  WARN 138160 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2022-10-17 22:06:24.302  INFO 138160 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-10-17 22:06:24.436  INFO 138160 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-10-17 22:06:24.912  INFO 138160 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2022-10-17 22:06:24.913  INFO 138160 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2022-10-17 22:06:25.341  INFO 138160 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2022-10-17 22:06:25.341  INFO 138160 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2022-10-17 22:06:25.754  INFO 138160 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-10-17 22:06:26.117  INFO 138160 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-10-17 22:06:26.118  INFO 138160 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-10-17 22:06:26.118  INFO 138160 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-10-17 22:06:26.118  INFO 138160 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-10-17 22:06:26.119  INFO 138160 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-10-17 22:06:26.119  INFO 138160 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-10-17 22:06:26.119  INFO 138160 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-10-17 22:06:27.123  INFO 138160 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-10-17 22:06:27.126  INFO 138160 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-10-17 22:06:27.132  INFO 138160 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-10-17 22:06:27.141  INFO 138160 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1666024587136 with initial instances count: 0
+2022-10-17 22:06:27.146  INFO 138160 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CUSTOMER-SERVICE with eureka with status UP
+2022-10-17 22:06:27.147  INFO 138160 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1666024587147, current=UP, previous=STARTING]
+2022-10-17 22:06:27.155  INFO 138160 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOMER-SERVICE/DESKTOP-29U9NHN:customer-service:9002: registering service...
+2022-10-17 22:06:27.274  INFO 138160 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9002 (http) with context path ''
+2022-10-17 22:06:27.276  INFO 138160 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9002
+2022-10-17 22:06:27.601  INFO 138160 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CUSTOMER-SERVICE/DESKTOP-29U9NHN:customer-service:9002 - registration status: 204
+2022-10-17 22:06:27.952  INFO 138160 --- [main] com.aruntech.CustomerServiceApplication  : Started CustomerServiceApplication in 118.128 seconds (JVM running for 120.167)
+2022-10-17 22:06:57.130  INFO 138160 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-10-17 22:06:57.131  INFO 138160 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-10-17 22:06:57.132  INFO 138160 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-10-17 22:06:57.132  INFO 138160 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-10-17 22:06:57.132  INFO 138160 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-10-17 22:06:57.132  INFO 138160 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2022-10-17 22:06:57.132  INFO 138160 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-10-17 22:06:57.196  INFO 138160 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-10-17 22:07:20.572  INFO 137436 --- [main] com.aruntech.BankingServiceApplication   : No active profile set, falling back to default profiles: default
+2022-10-17 22:07:23.682  INFO 137436 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-17 22:07:24.119  INFO 137436 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 408ms. Found 1 JPA repository interfaces.
+2022-10-17 22:07:24.894  INFO 137436 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=80dd6248-cc7b-3c34-ada9-ec0eeb26d0ae
+2022-10-17 22:07:25.303  INFO 137436 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.aruntech.service.CustomerConsumer' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-17 22:07:25.306  INFO 137436 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.aruntech.service.LoanConsumer' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-17 22:07:26.974  INFO 137436 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9001 (http)
+2022-10-17 22:07:27.015  INFO 137436 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-17 22:07:27.015  INFO 137436 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-10-17 22:07:28.759  INFO 137436 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-17 22:07:28.761  INFO 137436 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 8127 ms
+2022-10-17 22:07:29.486  INFO 137436 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-17 22:07:29.766  INFO 137436 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2022-10-17 22:07:30.295  INFO 137436 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2022-10-17 22:07:30.696  INFO 137436 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-17 22:07:32.075  INFO 137436 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-17 22:07:32.113  INFO 137436 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2022-10-17 22:09:08.880  INFO 137436 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-17 22:09:08.907  INFO 137436 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-17 22:09:10.215  WARN 137436 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-17 22:09:10.532  WARN 137436 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-10-17 22:09:10.533  INFO 137436 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-10-17 22:09:10.554  WARN 137436 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-10-17 22:09:10.554  INFO 137436 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-10-17 22:09:10.959  INFO 137436 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-10-17 22:09:12.301  WARN 137436 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2022-10-17 22:09:12.397  INFO 137436 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-10-17 22:09:12.456  INFO 137436 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-10-17 22:09:12.766  INFO 137436 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2022-10-17 22:09:12.766  INFO 137436 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2022-10-17 22:09:13.062  INFO 137436 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2022-10-17 22:09:13.063  INFO 137436 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2022-10-17 22:09:13.363  INFO 137436 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-10-17 22:09:13.537  INFO 137436 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-10-17 22:09:13.537  INFO 137436 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-10-17 22:09:13.537  INFO 137436 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-10-17 22:09:13.537  INFO 137436 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-10-17 22:09:13.537  INFO 137436 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-10-17 22:09:13.537  INFO 137436 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-10-17 22:09:13.537  INFO 137436 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-10-17 22:09:13.875  INFO 137436 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-10-17 22:09:13.880  INFO 137436 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-10-17 22:09:13.884  INFO 137436 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-10-17 22:09:13.890  INFO 137436 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1666024753887 with initial instances count: 1
+2022-10-17 22:09:13.893  INFO 137436 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BANKING-SERVICE with eureka with status UP
+2022-10-17 22:09:13.894  INFO 137436 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1666024753894, current=UP, previous=STARTING]
+2022-10-17 22:09:13.898  INFO 137436 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BANKING-SERVICE/DESKTOP-29U9NHN:banking-service:9001: registering service...
+2022-10-17 22:09:13.986  INFO 137436 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9001 (http) with context path ''
+2022-10-17 22:09:13.988  INFO 137436 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9001
+2022-10-17 22:09:13.992  INFO 137436 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BANKING-SERVICE/DESKTOP-29U9NHN:banking-service:9001 - registration status: 204
+2022-10-17 22:09:14.347  INFO 137436 --- [main] com.aruntech.BankingServiceApplication   : Started BankingServiceApplication in 116.196 seconds (JVM running for 117.802)
+2022-10-17 22:09:23.591  INFO 138160 --- [http-nio-9002-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-17 22:09:23.600  INFO 138160 --- [http-nio-9002-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-17 22:09:23.810  INFO 138160 --- [http-nio-9002-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 208 ms
+2022-10-17 22:09:24.090  INFO 138160 --- [http-nio-9002-exec-4] com.aruntech.service.CustomerService     : customer-service: Fetch all customers
+2022-10-17 22:09:25.185  INFO 138160 --- [http-nio-9002-exec-4] com.aruntech.service.CustomerService     : customer-service: All customers details: [Customer{id=1, name='Arun', accountNo=54622116, balance=2000.0, phone='xxxxxxxxxx', emailId='xxxx@gmail.com'}, Customer{id=10, name='Andrino', accountNo=62452419, balance=2000.0, phone='xxxxxxxxxx', emailId='xxxx@gmail.com'}]
+2022-10-17 22:09:58.623  INFO 137436 --- [http-nio-9001-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-17 22:09:58.623  INFO 137436 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-17 22:09:58.640  INFO 137436 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2022-10-17 22:09:58.748  INFO 137436 --- [http-nio-9001-exec-1] com.aruntech.service.BankingService      : banking-service: Deposit the amount with payload TransactionRequest{customerId='10', accountNo='0', amount=1500.0}
+2022-10-17 22:09:59.063  INFO 137436 --- [http-nio-9001-exec-1] c.netflix.config.ChainedDynamicProperty  : Flipping property: customer-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2022-10-17 22:09:59.148  INFO 137436 --- [http-nio-9001-exec-1] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook installed for: NFLoadBalancer-PingTimer-customer-service
+2022-10-17 22:09:59.149  INFO 137436 --- [http-nio-9001-exec-1] c.netflix.loadbalancer.BaseLoadBalancer  : Client: customer-service instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=customer-service,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2022-10-17 22:09:59.168  INFO 137436 --- [http-nio-9001-exec-1] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
+2022-10-17 22:09:59.203  INFO 137436 --- [http-nio-9001-exec-1] c.netflix.config.ChainedDynamicProperty  : Flipping property: customer-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2022-10-17 22:09:59.205  INFO 137436 --- [http-nio-9001-exec-1] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client customer-service initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=customer-service,current list of Servers=[DESKTOP-29U9NHN:9002],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:DESKTOP-29U9NHN:9002;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 05:30:00 IST 1970;	First connection made: Thu Jan 01 05:30:00 IST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@59468efd
+2022-10-17 22:09:59.365  INFO 138160 --- [http-nio-9002-exec-5] com.aruntech.service.CustomerService     : customer-service: Fetch the customer with id 10
+2022-10-17 22:09:59.403  INFO 138160 --- [http-nio-9002-exec-5] com.aruntech.service.CustomerService     : customer-service: Retrieved the customer with details Customer{id=10, name='Andrino', accountNo=62452419, balance=2000.0, phone='xxxxxxxxxx', emailId='xxxx@gmail.com'}
+2022-10-17 22:09:59.447  INFO 137436 --- [http-nio-9001-exec-1] com.aruntech.service.BankingService      : banking-service: Calling customer-service with payload: UpdateBalanceRequest{id=10, accountNo=62452419, amount=3500.0}
+2022-10-17 22:09:59.496  INFO 138160 --- [http-nio-9002-exec-8] com.aruntech.service.CustomerService     : customer-service: Update the customer details with id 10
+2022-10-17 22:10:00.094  INFO 138160 --- [http-nio-9002-exec-8] com.aruntech.service.CustomerService     : customer-service: The updated customer details are Customer{id=10, name='Andrino', accountNo=62452419, balance=3500.0, phone='xxxxxxxxxx', emailId='xxxx@gmail.com'}
+2022-10-17 22:10:00.100  INFO 138160 --- [http-nio-9002-exec-9] com.aruntech.service.CustomerService     : customer-service: Fetch the customer with id 10
+2022-10-17 22:10:00.102  INFO 138160 --- [http-nio-9002-exec-9] com.aruntech.service.CustomerService     : customer-service: Retrieved the customer with details Customer{id=10, name='Andrino', accountNo=62452419, balance=3500.0, phone='xxxxxxxxxx', emailId='xxxx@gmail.com'}
+2022-10-17 22:10:00.105  INFO 137436 --- [http-nio-9001-exec-1] com.aruntech.service.BankingService      : banking-service: Updated customer details from customer-service: Customer{id=10, name='Andrino', accountNo=62452419, balance=3500.0, phone='xxxxxxxxxx', emailId='xxxx@gmail.com', loanDetails=[]}
+2022-10-17 22:10:00.184  INFO 137436 --- [PollingServerListUpdater-0] c.netflix.config.ChainedDynamicProperty  : Flipping property: customer-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2022-10-17 22:10:00.290  INFO 137436 --- [http-nio-9001-exec-1] com.aruntech.service.BankingService      : banking-service: Balance was updated successfully with details TransactionResponse{status='success', message='Successfully updated the balance', balance=3500.0}
+2022-10-17 22:10:22.028  INFO 138160 --- [http-nio-9002-exec-2] com.aruntech.service.CustomerService     : customer-service: Fetch the customer with id 10
+2022-10-17 22:10:22.037  INFO 138160 --- [http-nio-9002-exec-2] com.aruntech.service.CustomerService     : customer-service: Retrieved the customer with details Customer{id=10, name='Andrino', accountNo=62452419, balance=3500.0, phone='xxxxxxxxxx', emailId='xxxx@gmail.com'}
+2022-10-17 22:10:22.041  INFO 137436 --- [http-nio-9001-exec-2] com.aruntech.service.BankingService      : banking-service: Calling customer-service with payload: UpdateBalanceRequest{id=10, accountNo=62452419, amount=3000.0}
+2022-10-17 22:10:22.049  INFO 138160 --- [http-nio-9002-exec-3] com.aruntech.service.CustomerService     : customer-service: Update the customer details with id 10
+2022-10-17 22:10:22.059  INFO 138160 --- [http-nio-9002-exec-3] com.aruntech.service.CustomerService     : customer-service: The updated customer details are Customer{id=10, name='Andrino', accountNo=62452419, balance=3000.0, phone='xxxxxxxxxx', emailId='xxxx@gmail.com'}
+2022-10-17 22:10:22.067  INFO 138160 --- [http-nio-9002-exec-6] com.aruntech.service.CustomerService     : customer-service: Fetch the customer with id 10
+2022-10-17 22:10:22.071  INFO 138160 --- [http-nio-9002-exec-6] com.aruntech.service.CustomerService     : customer-service: Retrieved the customer with details Customer{id=10, name='Andrino', accountNo=62452419, balance=3000.0, phone='xxxxxxxxxx', emailId='xxxx@gmail.com'}
+2022-10-17 22:10:22.075  INFO 137436 --- [http-nio-9001-exec-2] com.aruntech.service.BankingService      : banking-service: Updated customer details from customer-service: Customer{id=10, name='Andrino', accountNo=62452419, balance=3000.0, phone='xxxxxxxxxx', emailId='xxxx@gmail.com', loanDetails=[]}
+2022-10-17 22:10:22.087  INFO 137436 --- [http-nio-9001-exec-2] com.aruntech.service.BankingService      : banking-service: Balance was updated successfully with details TransactionResponse{status='success', message='Successfully updated the balance', balance=3000.0}
+2022-10-17 22:10:35.587  INFO 137436 --- [http-nio-9001-exec-3] com.aruntech.service.BankingService      : banking-service: Check the balance of the customer id 10
+2022-10-17 22:10:35.592  INFO 138160 --- [http-nio-9002-exec-10] com.aruntech.service.CustomerService     : customer-service: Fetch the customer with id 10
+2022-10-17 22:10:35.598  INFO 138160 --- [http-nio-9002-exec-10] com.aruntech.service.CustomerService     : customer-service: Retrieved the customer with details Customer{id=10, name='Andrino', accountNo=62452419, balance=3000.0, phone='xxxxxxxxxx', emailId='xxxx@gmail.com'}
+2022-10-17 22:11:26.140  INFO 138160 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-10-17 22:13:47.161  INFO 137436 --- [Thread-11] c.n.l.PollingServerListUpdater           : Shutting down the Executor Pool for PollingServerListUpdater
+2022-10-17 22:13:47.184  INFO 137436 --- [SpringContextShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application BANKING-SERVICE with eureka with status DOWN
+2022-10-17 22:13:47.185  WARN 137436 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1666025027185, current=DOWN, previous=UP]
+2022-10-17 22:13:47.187  INFO 137436 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BANKING-SERVICE/DESKTOP-29U9NHN:banking-service:9001: registering service...
+2022-10-17 22:13:47.217  INFO 137436 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BANKING-SERVICE/DESKTOP-29U9NHN:banking-service:9001 - registration status: 204
+2022-10-17 22:13:47.229  INFO 137436 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-10-17 22:13:47.251  INFO 137436 --- [SpringContextShutdownHook] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook removed for: NFLoadBalancer-PingTimer-customer-service
+2022-10-17 22:13:47.272  INFO 137436 --- [SpringContextShutdownHook] c.n.u.concurrent.ShutdownEnabledTimer    : Exception caught (might be ok if at shutdown)
+
+java.lang.IllegalStateException: Shutdown in progress
+	at java.lang.ApplicationShutdownHooks.remove(ApplicationShutdownHooks.java:82) ~[na:1.8.0_301]
+	at java.lang.Runtime.removeShutdownHook(Runtime.java:239) ~[na:1.8.0_301]
+	at com.netflix.util.concurrent.ShutdownEnabledTimer.cancel(ShutdownEnabledTimer.java:70) ~[netflix-commons-util-0.3.0.jar:0.3.0]
+	at com.netflix.loadbalancer.BaseLoadBalancer.cancelPingTask(BaseLoadBalancer.java:632) [ribbon-loadbalancer-2.3.0.jar:2.3.0]
+	at com.netflix.loadbalancer.BaseLoadBalancer.shutdown(BaseLoadBalancer.java:883) [ribbon-loadbalancer-2.3.0.jar:2.3.0]
+	at com.netflix.loadbalancer.DynamicServerListLoadBalancer.shutdown(DynamicServerListLoadBalancer.java:285) [ribbon-loadbalancer-2.3.0.jar:2.3.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_301]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_301]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_301]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_301]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.invokeCustomDestroyMethod(DisposableBeanAdapter.java:339) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:273) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1072) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1065) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1060) [spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1029) [spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:978) [spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:92) [spring-cloud-context-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:258) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1072) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1065) [spring-beans-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1060) [spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1029) [spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:948) [spring-context-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+
+2022-10-17 22:13:47.289  INFO 137436 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-17 22:13:47.310  INFO 137436 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-17 22:13:47.425  INFO 137436 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-17 22:13:47.426  INFO 137436 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-10-17 22:13:50.452  INFO 137436 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-10-17 22:13:50.505  INFO 137436 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BANKING-SERVICE/DESKTOP-29U9NHN:banking-service:9001 - deregister  status: 200
+2022-10-17 22:13:50.536  INFO 137436 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-10-17 22:15:34.572  INFO 147532 --- [main] com.aruntech.BankingServiceApplication   : No active profile set, falling back to default profiles: default
+2022-10-17 22:15:36.040  INFO 147532 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-17 22:15:36.764  INFO 147532 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 694ms. Found 1 JPA repository interfaces.
+2022-10-17 22:15:37.577  INFO 147532 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=80dd6248-cc7b-3c34-ada9-ec0eeb26d0ae
+2022-10-17 22:15:38.007  INFO 147532 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.aruntech.service.CustomerConsumer' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-17 22:15:38.010  INFO 147532 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.aruntech.service.LoanConsumer' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-10-17 22:15:39.687  INFO 147532 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9001 (http)
+2022-10-17 22:15:39.722  INFO 147532 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-17 22:15:39.723  INFO 147532 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-10-17 22:15:42.366  INFO 147532 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-17 22:15:42.367  INFO 147532 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 7746 ms
+2022-10-17 22:15:43.159  INFO 147532 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-17 22:15:43.467  INFO 147532 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2022-10-17 22:15:43.914  INFO 147532 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2022-10-17 22:15:44.184  INFO 147532 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-17 22:15:45.538  INFO 147532 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-17 22:15:45.578  INFO 147532 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2022-10-17 22:16:26.152  INFO 138160 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-10-17 22:17:16.059  INFO 147532 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-17 22:17:16.072  INFO 147532 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-17 22:17:16.639  WARN 147532 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-17 22:17:16.811  WARN 147532 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-10-17 22:17:16.811  INFO 147532 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-10-17 22:17:16.822  WARN 147532 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-10-17 22:17:16.823  INFO 147532 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-10-17 22:17:17.087  INFO 147532 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-10-17 22:17:18.046  WARN 147532 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2022-10-17 22:17:18.118  INFO 147532 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-10-17 22:17:18.168  INFO 147532 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-10-17 22:17:18.377  INFO 147532 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2022-10-17 22:17:18.377  INFO 147532 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2022-10-17 22:17:18.569  INFO 147532 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2022-10-17 22:17:18.569  INFO 147532 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2022-10-17 22:17:18.802  INFO 147532 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-10-17 22:17:18.965  INFO 147532 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-10-17 22:17:18.965  INFO 147532 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-10-17 22:17:18.965  INFO 147532 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-10-17 22:17:18.965  INFO 147532 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-10-17 22:17:18.965  INFO 147532 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-10-17 22:17:18.965  INFO 147532 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-10-17 22:17:18.965  INFO 147532 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-10-17 22:17:19.220  INFO 147532 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-10-17 22:17:19.226  INFO 147532 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-10-17 22:17:19.230  INFO 147532 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-10-17 22:17:19.235  INFO 147532 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1666025239233 with initial instances count: 1
+2022-10-17 22:17:19.238  INFO 147532 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BANKING-SERVICE with eureka with status UP
+2022-10-17 22:17:19.239  INFO 147532 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1666025239239, current=UP, previous=STARTING]
+2022-10-17 22:17:19.243  INFO 147532 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BANKING-SERVICE/DESKTOP-29U9NHN:banking-service:9001: registering service...
+2022-10-17 22:17:19.319  INFO 147532 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BANKING-SERVICE/DESKTOP-29U9NHN:banking-service:9001 - registration status: 204
+2022-10-17 22:17:19.321  INFO 147532 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9001 (http) with context path ''
+2022-10-17 22:17:19.322  INFO 147532 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9001
+2022-10-17 22:17:19.593  INFO 147532 --- [main] com.aruntech.BankingServiceApplication   : Started BankingServiceApplication in 107.489 seconds (JVM running for 109.055)
+2022-10-17 22:18:07.545  INFO 147532 --- [http-nio-9001-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-17 22:18:07.546  INFO 147532 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-17 22:18:07.567  INFO 147532 --- [http-nio-9001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 20 ms
+2022-10-17 22:18:07.706  INFO 147532 --- [http-nio-9001-exec-1] com.aruntech.service.BankingService      : banking-service: Creating the new bank account
+2022-10-17 22:18:07.707  INFO 147532 --- [http-nio-9001-exec-1] com.aruntech.service.BankingService      : banking-service: Payload for creating the new customer: CreateCustomerRequest{name='Carbin', balance=2000.0, phone='xxxxxxxxxx', emailId='xxxx@gmail.com'}
+2022-10-17 22:18:07.708  INFO 147532 --- [http-nio-9001-exec-1] com.aruntech.service.BankingService      : banking-service: Making call to customer-service to create the customer
+2022-10-17 22:18:08.171  INFO 147532 --- [http-nio-9001-exec-1] c.netflix.config.ChainedDynamicProperty  : Flipping property: customer-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2022-10-17 22:18:08.242  INFO 147532 --- [http-nio-9001-exec-1] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook installed for: NFLoadBalancer-PingTimer-customer-service
+2022-10-17 22:18:08.243  INFO 147532 --- [http-nio-9001-exec-1] c.netflix.loadbalancer.BaseLoadBalancer  : Client: customer-service instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=customer-service,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2022-10-17 22:18:08.260  INFO 147532 --- [http-nio-9001-exec-1] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
+2022-10-17 22:18:08.316  INFO 147532 --- [http-nio-9001-exec-1] c.netflix.config.ChainedDynamicProperty  : Flipping property: customer-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2022-10-17 22:18:08.320  INFO 147532 --- [http-nio-9001-exec-1] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client customer-service initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=customer-service,current list of Servers=[DESKTOP-29U9NHN:9002],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:DESKTOP-29U9NHN:9002;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 05:30:00 IST 1970;	First connection made: Thu Jan 01 05:30:00 IST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@778ad772
+2022-10-17 22:18:08.684  INFO 138160 --- [http-nio-9002-exec-1] com.aruntech.service.CustomerService     : customer-service: Create the new customer
+2022-10-17 22:18:09.281  INFO 147532 --- [PollingServerListUpdater-0] c.netflix.config.ChainedDynamicProperty  : Flipping property: customer-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2022-10-17 22:18:09.451  INFO 138160 --- [http-nio-9002-exec-1] com.aruntech.service.CustomerService     : customer-service: New customer Customer{id=17, name='Carbin', accountNo=95319134, balance=2000.0, phone='xxxxxxxxxx', emailId='xxxx@gmail.com'} was created successfully
+2022-10-17 22:18:09.505  INFO 147532 --- [http-nio-9001-exec-1] com.aruntech.service.BankingService      : banking-service: Response from customer-service for the new customer: Customer{id=17, name='Carbin', accountNo=95319134, balance=2000.0, phone='xxxxxxxxxx', emailId='xxxx@gmail.com', loanDetails=[]}
+2022-10-17 22:18:09.704  INFO 147532 --- [http-nio-9001-exec-1] com.aruntech.service.BankingService      : banking-service: Account was created with response: AccountCreateResponse{status='success', message='Successfully created the bank account', customerId='17', accountNo='95319134'}
+2022-10-17 22:18:36.540  INFO 147532 --- [http-nio-9001-exec-3] com.aruntech.service.BankingService      : banking-service: Deposit the amount with payload TransactionRequest{customerId='17', accountNo='0', amount=1500.0}
+2022-10-17 22:18:36.561  INFO 138160 --- [http-nio-9002-exec-4] com.aruntech.service.CustomerService     : customer-service: Fetch the customer with id 17
+2022-10-17 22:18:36.581  INFO 138160 --- [http-nio-9002-exec-4] com.aruntech.service.CustomerService     : customer-service: Retrieved the customer with details Customer{id=17, name='Carbin', accountNo=95319134, balance=2000.0, phone='xxxxxxxxxx', emailId='xxxx@gmail.com'}
+2022-10-17 22:18:36.586  INFO 147532 --- [http-nio-9001-exec-3] com.aruntech.service.BankingService      : banking-service: Calling customer-service with payload: UpdateBalanceRequest{id=17, accountNo=95319134, amount=3500.0}
+2022-10-17 22:18:36.602  INFO 138160 --- [http-nio-9002-exec-5] com.aruntech.service.CustomerService     : customer-service: Update the customer details with id 17
+2022-10-17 22:18:36.612  INFO 138160 --- [http-nio-9002-exec-5] com.aruntech.service.CustomerService     : customer-service: The updated customer details are Customer{id=17, name='Carbin', accountNo=95319134, balance=3500.0, phone='xxxxxxxxxx', emailId='xxxx@gmail.com'}
+2022-10-17 22:18:36.623  INFO 138160 --- [http-nio-9002-exec-8] com.aruntech.service.CustomerService     : customer-service: Fetch the customer with id 17
+2022-10-17 22:18:36.627  INFO 138160 --- [http-nio-9002-exec-8] com.aruntech.service.CustomerService     : customer-service: Retrieved the customer with details Customer{id=17, name='Carbin', accountNo=95319134, balance=3500.0, phone='xxxxxxxxxx', emailId='xxxx@gmail.com'}
+2022-10-17 22:18:36.629  INFO 147532 --- [http-nio-9001-exec-3] com.aruntech.service.BankingService      : banking-service: Updated customer details from customer-service: Customer{id=17, name='Carbin', accountNo=95319134, balance=3500.0, phone='xxxxxxxxxx', emailId='xxxx@gmail.com', loanDetails=[]}
+2022-10-17 22:18:36.638  INFO 147532 --- [http-nio-9001-exec-3] com.aruntech.service.BankingService      : banking-service: Balance was updated successfully with details TransactionResponse{status='success', message='Successfully updated the balance', balance=3500.0}
+2022-10-17 22:18:50.943  INFO 138160 --- [http-nio-9002-exec-9] com.aruntech.service.CustomerService     : customer-service: Fetch the customer with id 17
+2022-10-17 22:18:50.948  INFO 138160 --- [http-nio-9002-exec-9] com.aruntech.service.CustomerService     : customer-service: Retrieved the customer with details Customer{id=17, name='Carbin', accountNo=95319134, balance=3500.0, phone='xxxxxxxxxx', emailId='xxxx@gmail.com'}
+2022-10-17 22:18:50.950  INFO 147532 --- [http-nio-9001-exec-4] com.aruntech.service.BankingService      : banking-service: Calling customer-service with payload: UpdateBalanceRequest{id=17, accountNo=95319134, amount=3000.0}
+2022-10-17 22:18:50.958  INFO 138160 --- [http-nio-9002-exec-2] com.aruntech.service.CustomerService     : customer-service: Update the customer details with id 17
+2022-10-17 22:18:50.964  INFO 138160 --- [http-nio-9002-exec-2] com.aruntech.service.CustomerService     : customer-service: The updated customer details are Customer{id=17, name='Carbin', accountNo=95319134, balance=3000.0, phone='xxxxxxxxxx', emailId='xxxx@gmail.com'}
+2022-10-17 22:18:50.970  INFO 138160 --- [http-nio-9002-exec-3] com.aruntech.service.CustomerService     : customer-service: Fetch the customer with id 17
+2022-10-17 22:18:50.974  INFO 138160 --- [http-nio-9002-exec-3] com.aruntech.service.CustomerService     : customer-service: Retrieved the customer with details Customer{id=17, name='Carbin', accountNo=95319134, balance=3000.0, phone='xxxxxxxxxx', emailId='xxxx@gmail.com'}
+2022-10-17 22:18:50.982  INFO 147532 --- [http-nio-9001-exec-4] com.aruntech.service.BankingService      : banking-service: Updated customer details from customer-service: Customer{id=17, name='Carbin', accountNo=95319134, balance=3000.0, phone='xxxxxxxxxx', emailId='xxxx@gmail.com', loanDetails=[]}
+2022-10-17 22:18:50.987  INFO 147532 --- [http-nio-9001-exec-4] com.aruntech.service.BankingService      : banking-service: Balance was updated successfully with details TransactionResponse{status='success', message='Successfully updated the balance', balance=3000.0}
+2022-10-17 22:19:10.603  INFO 147532 --- [http-nio-9001-exec-5] com.aruntech.service.BankingService      : banking-service: Check the balance of the customer id 17
+2022-10-17 22:19:10.608  INFO 138160 --- [http-nio-9002-exec-6] com.aruntech.service.CustomerService     : customer-service: Fetch the customer with id 17
+2022-10-17 22:19:10.612  INFO 138160 --- [http-nio-9002-exec-6] com.aruntech.service.CustomerService     : customer-service: Retrieved the customer with details Customer{id=17, name='Carbin', accountNo=95319134, balance=3000.0, phone='xxxxxxxxxx', emailId='xxxx@gmail.com'}

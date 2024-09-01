@@ -1,0 +1,63 @@
+server:
+  port: 9004
+
+spring:
+  application:
+    name: gateway-service
+  cloud:
+    gateway:
+      routes:
+        - id: banking-service
+          uri: lb://banking-service
+          predicates:
+            - Path=/account/**
+          filters:
+            - name: CircuitBreaker
+              args:
+                name: banking-service
+                fallbackuri: forward:/bankingFallback
+        - id: customer-service
+          uri: lb://customer-service
+          predicates:
+            - Path=/customer/**
+          filters:
+            - name: CircuitBreaker
+              args:
+                name: customer-service
+                fallbackuri: forward:/customerFallback
+        - id: loan-service
+          uri: lb://loan-service
+          predicates:
+            - Path=/loan/**
+          filters:
+            - name: CircuitBreaker
+              args:
+                name: loan-service
+                fallbackuri: forward:/loanFallback
+
+ribbon:
+  ReadTimeout: 60000
+  ConnectTimeout: 60000
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream
+
+hystrix:
+  command:
+    fallbackcmd:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 50000
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    preferIpAddress: true

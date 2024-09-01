@@ -1,0 +1,12 @@
+server:
+  port: 9002
+
+spring:
+  h2:
+    console:
+      enabled: true
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  application:
+    name: customer-service

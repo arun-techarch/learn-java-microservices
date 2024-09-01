@@ -1,0 +1,13 @@
+spring:
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: jdbc:h2:mem:banking;IFEXISTS=FALSE;DB_CLOSE_DELAY=-1
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+
+customer-service:
+  endpoints:
+    url: http://customer-service/customer

@@ -14,6 +14,22 @@
         <option value="$PROJECT_DIR$/circuit-breaker-resilence4j/pom.xml" />
         <option value="$PROJECT_DIR$/config-server-local/banking-service/pom.xml" />
         <option value="$PROJECT_DIR$/config-server-local/pom.xml" />
+        <option value="$PROJECT_DIR$/connect-db-h2/pom.xml" />
+        <option value="$PROJECT_DIR$/connect-db-mongo/pom.xml" />
+        <option value="$PROJECT_DIR$/connect-db-mysql/pom.xml" />
+        <option value="$PROJECT_DIR$/connect-db-oracle/pom.xml" />
+        <option value="$PROJECT_DIR$/distributed-logging-zipkin/pom.xml" />
+        <option value="$PROJECT_DIR$/init-dataload-cmdlinerunner/pom.xml" />
+        <option value="$PROJECT_DIR$/init-dataload-dbscript/pom.xml" />
+        <option value="$PROJECT_DIR$/init-dataload-flyway/pom.xml" />
+        <option value="$PROJECT_DIR$/init-dataload-liquibase/pom.xml" />
+        <option value="$PROJECT_DIR$/init-dataload-postconstruct/pom.xml" />
+        <option value="$PROJECT_DIR$/service-cloud-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/service-connect-feignclient/pom.xml" />
+        <option value="$PROJECT_DIR$/service-connect-resttemplate/pom.xml" />
+        <option value="$PROJECT_DIR$/service-discovery/pom.xml" />
+        <option value="$PROJECT_DIR$/service-load-balancer/pom.xml" />
+        <option value="$PROJECT_DIR$/service-zuul-gateway/pom.xml" />
       </list>
     </option>
   </component>

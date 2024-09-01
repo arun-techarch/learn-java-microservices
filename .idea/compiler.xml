@@ -7,36 +7,83 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="service-registry (2)" />
-        <module name="banking-service (7)" />
+        <module name="customer-service (21)" />
+        <module name="loan-service (7)" />
+        <module name="banking-service (17)" />
         <module name="banking-service (5)" />
-        <module name="banking-service (3)" />
         <module name="service-registry (6)" />
+        <module name="loan-service (3)" />
+        <module name="customer-service (13)" />
         <module name="banking-service (1)" />
-        <module name="service-registry (4)" />
-        <module name="customer-service (5)" />
+        <module name="customer-service (17)" />
         <module name="customer-service (7)" />
-        <module name="loan-service (1)" />
-        <module name="customer-service (1)" />
+        <module name="banking-service (9)" />
         <module name="customer-service (3)" />
         <module name="customer-service (8)" />
-        <module name="service-registry (8)" />
-        <module name="banking-service" />
-        <module name="config-server (1)" />
-        <module name="service-registry (1)" />
-        <module name="banking-service (6)" />
+        <module name="service-registry (12)" />
+        <module name="service-registry (16)" />
+        <module name="banking-service (13)" />
+        <module name="loan-service (6)" />
+        <module name="customer-service (20)" />
+        <module name="banking-service (16)" />
         <module name="banking-service (4)" />
+        <module name="loan-service (2)" />
         <module name="customer-service" />
-        <module name="banking-service (2)" />
-        <module name="service-registry (5)" />
+        <module name="customer-service (24)" />
+        <module name="customer-service (12)" />
         <module name="service-registry (3)" />
-        <module name="customer-service (4)" />
         <module name="customer-service (6)" />
+        <module name="customer-service (16)" />
         <module name="customer-service (2)" />
         <module name="banking-service (8)" />
-        <module name="config-server" />
-        <module name="loan-service" />
+        <module name="service-registry (11)" />
+        <module name="gateway-service (1)" />
+        <module name="gateway-service" />
+        <module name="service-registry (15)" />
         <module name="service-registry (7)" />
+        <module name="service-registry (19)" />
         <module name="service-registry" />
+        <module name="banking-service (12)" />
+        <module name="banking-service (7)" />
+        <module name="banking-service (15)" />
+        <module name="banking-service (3)" />
+        <module name="service-registry (4)" />
+        <module name="customer-service (23)" />
+        <module name="customer-service (11)" />
+        <module name="loan-service (5)" />
+        <module name="banking-service (19)" />
+        <module name="customer-service (5)" />
+        <module name="loan-service (1)" />
+        <module name="customer-service (15)" />
+        <module name="customer-service (1)" />
+        <module name="customer-service (19)" />
+        <module name="service-registry (10)" />
+        <module name="service-registry (14)" />
+        <module name="service-registry (8)" />
+        <module name="service-registry (18)" />
+        <module name="banking-service" />
+        <module name="config-server (1)" />
+        <module name="banking-service (11)" />
+        <module name="customer-service (10)" />
+        <module name="banking-service (18)" />
+        <module name="service-registry (1)" />
+        <module name="banking-service (6)" />
+        <module name="loan-service (8)" />
+        <module name="customer-service (14)" />
+        <module name="banking-service (2)" />
+        <module name="service-registry (5)" />
+        <module name="loan-service (4)" />
+        <module name="customer-service (22)" />
+        <module name="customer-service (4)" />
+        <module name="customer-service (18)" />
+        <module name="config-server" />
+        <module name="customer-service (9)" />
+        <module name="service-registry (13)" />
+        <module name="loan-service" />
+        <module name="banking-service (10)" />
+        <module name="service-registry (9)" />
+        <module name="service-registry (17)" />
+        <module name="banking-service (14)" />
         <module name="config-server (2)" />
       </profile>
     </annotationProcessing>
@@ -45,6 +92,16 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="banking-service" options="-parameters" />
       <module name="banking-service (1)" options="-parameters" />
+      <module name="banking-service (10)" options="-parameters" />
+      <module name="banking-service (11)" options="-parameters" />
+      <module name="banking-service (12)" options="-parameters" />
+      <module name="banking-service (13)" options="-parameters" />
+      <module name="banking-service (14)" options="-parameters" />
+      <module name="banking-service (15)" options="-parameters" />
+      <module name="banking-service (16)" options="-parameters" />
+      <module name="banking-service (17)" options="-parameters" />
+      <module name="banking-service (18)" options="-parameters" />
+      <module name="banking-service (19)" options="-parameters" />
       <module name="banking-service (2)" options="-parameters" />
       <module name="banking-service (3)" options="-parameters" />
       <module name="banking-service (4)" options="-parameters" />
@@ -52,22 +109,58 @@
       <module name="banking-service (6)" options="-parameters" />
       <module name="banking-service (7)" options="-parameters" />
       <module name="banking-service (8)" options="-parameters" />
+      <module name="banking-service (9)" options="-parameters" />
       <module name="config-server" options="-parameters" />
       <module name="config-server (1)" options="-parameters" />
       <module name="config-server (2)" options="-parameters" />
       <module name="customer-service" options="-parameters" />
       <module name="customer-service (1)" options="-parameters" />
+      <module name="customer-service (10)" options="-parameters" />
+      <module name="customer-service (11)" options="-parameters" />
+      <module name="customer-service (12)" options="-parameters" />
+      <module name="customer-service (13)" options="-parameters" />
+      <module name="customer-service (14)" options="-parameters" />
+      <module name="customer-service (15)" options="-parameters" />
+      <module name="customer-service (16)" options="-parameters" />
+      <module name="customer-service (17)" options="-parameters" />
+      <module name="customer-service (18)" options="-parameters" />
+      <module name="customer-service (19)" options="-parameters" />
       <module name="customer-service (2)" options="-parameters" />
+      <module name="customer-service (20)" options="-parameters" />
+      <module name="customer-service (21)" options="-parameters" />
+      <module name="customer-service (22)" options="-parameters" />
+      <module name="customer-service (23)" options="-parameters" />
+      <module name="customer-service (24)" options="-parameters" />
       <module name="customer-service (3)" options="-parameters" />
       <module name="customer-service (4)" options="-parameters" />
       <module name="customer-service (5)" options="-parameters" />
       <module name="customer-service (6)" options="-parameters" />
       <module name="customer-service (7)" options="-parameters" />
       <module name="customer-service (8)" options="-parameters" />
+      <module name="customer-service (9)" options="-parameters" />
+      <module name="gateway-service" options="-parameters" />
+      <module name="gateway-service (1)" options="-parameters" />
       <module name="loan-service" options="-parameters" />
       <module name="loan-service (1)" options="-parameters" />
+      <module name="loan-service (2)" options="-parameters" />
+      <module name="loan-service (3)" options="-parameters" />
+      <module name="loan-service (4)" options="-parameters" />
+      <module name="loan-service (5)" options="-parameters" />
+      <module name="loan-service (6)" options="-parameters" />
+      <module name="loan-service (7)" options="-parameters" />
+      <module name="loan-service (8)" options="-parameters" />
       <module name="service-registry" options="-parameters" />
       <module name="service-registry (1)" options="-parameters" />
+      <module name="service-registry (10)" options="-parameters" />
+      <module name="service-registry (11)" options="-parameters" />
+      <module name="service-registry (12)" options="-parameters" />
+      <module name="service-registry (13)" options="-parameters" />
+      <module name="service-registry (14)" options="-parameters" />
+      <module name="service-registry (15)" options="-parameters" />
+      <module name="service-registry (16)" options="-parameters" />
+      <module name="service-registry (17)" options="-parameters" />
+      <module name="service-registry (18)" options="-parameters" />
+      <module name="service-registry (19)" options="-parameters" />
       <module name="service-registry (2)" options="-parameters" />
       <module name="service-registry (3)" options="-parameters" />
       <module name="service-registry (4)" options="-parameters" />
@@ -75,6 +168,7 @@
       <module name="service-registry (6)" options="-parameters" />
       <module name="service-registry (7)" options="-parameters" />
       <module name="service-registry (8)" options="-parameters" />
+      <module name="service-registry (9)" options="-parameters" />
     </option>
   </component>
 </project>

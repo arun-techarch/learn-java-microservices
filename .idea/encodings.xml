@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/api-doc-openapi/banking-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/api-doc-openapi/customer-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/api-doc-openapi/service-registry/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/api-doc-openapi/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/api-doc-openapi/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/api-doc-swagger/banking-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/api-doc-swagger/customer-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/api-doc-swagger/service-registry/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/api-doc-swagger/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/api-doc-swagger/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/centralized-log-file/banking-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/centralized-log-file/customer-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/centralized-log-file/service-registry/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/centralized-log-file/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/centralized-log-file/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/circuit-breaker-hystrix/banking-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/circuit-breaker-hystrix/customer-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/circuit-breaker-hystrix/loan-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/circuit-breaker-hystrix/service-registry/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/circuit-breaker-hystrix/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/circuit-breaker-hystrix/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/circuit-breaker-resilence4j/banking-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/circuit-breaker-resilence4j/customer-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/circuit-breaker-resilence4j/loan-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/circuit-breaker-resilence4j/service-registry/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/circuit-breaker-resilence4j/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/circuit-breaker-resilence4j/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client-load-balancer/banking-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client-load-balancer/customer-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client-load-balancer/service-registry/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client-load-balancer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client-load-balancer/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config-auto-refresh/banking-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config-auto-refresh/config-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config-auto-refresh/customer-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config-auto-refresh/service-registry/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config-auto-refresh/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config-auto-refresh/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config-server-git/banking-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config-server-git/config-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config-server-git/customer-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config-server-git/service-registry/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config-server-git/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config-server-git/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config-server-local/banking-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config-server-local/config-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config-server-local/customer-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config-server-local/service-registry/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config-server-local/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config-server-local/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

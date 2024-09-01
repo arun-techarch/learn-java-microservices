@@ -1,0 +1,12 @@
+server:
+  port: 9001
+
+spring:
+  application:
+    name: banking-service
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
